@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Dropdown.css';
 
 const Dropdown = ({ title, items, onValueChanged }) => (
@@ -11,5 +12,11 @@ const Dropdown = ({ title, items, onValueChanged }) => (
 		</select>
 	</div>
 )
+
+Dropdown.propTypes = {
+	title: PropTypes.string.isRequired,
+	items: PropTypes.array.isRequired,
+	onValueChanged: PropTypes.func.isRequired
+}
 
 export default Dropdown;
