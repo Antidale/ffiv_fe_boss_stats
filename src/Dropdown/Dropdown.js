@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import './Dropdown.css';
 
 const Dropdown = ({ title, items, onValueChanged }) => (
-	<div>
-		<h2>{title}</h2>
+	<div className="Dropdown">
+		<h2 className="Dropdown-h2">{title}</h2>
 		<select onChange={onValueChanged}>
 			{items.map(item =>
 				<option key={item.id} value={item.id}>{item.name}</option>
