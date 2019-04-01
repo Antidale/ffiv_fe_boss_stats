@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Dropdown from './Dropdown/Dropdown';
 import BossStat from './BossStat/BossStat';
+import Header from './Header/Header';
 
 const API = "https://localhost:5001/api/";
 const BATTLE_ENDPOINT = "bossbattle";
@@ -67,9 +68,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1>Free Enterprise</h1>
-        </header>
+        <Header />
         <main>
           <section>
             <Dropdown
