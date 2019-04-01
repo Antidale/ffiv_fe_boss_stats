@@ -1,0 +1,13 @@
+.Dropdown {
+	display: inline-flex;
+	margin: 5px;
+	padding: 0px 10px;
+}
+
+.Dropdown-h2 {
+	padding-right: 10px;
+}
+
+select {
+	font-size: 2em;
+}
