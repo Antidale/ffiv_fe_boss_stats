@@ -8,10 +8,6 @@ const BATTLE_ENDPOINT = "bossbattle";
 const LOCATION_ENDPOINT = "battlelocation";
 const BOSSSTATS_ENDPOINT = "bossstats";
 
-const test = (input) => {
-  console.log(input.target.value);
-}
-
 class App extends Component {
 
   constructor(props) {
@@ -24,9 +20,11 @@ class App extends Component {
       battleId: 1
     };
     this.clickHandler = this.clickHandler.bind(this);
+    this.battleOnChanged = this.battleOnChanged.bind(this);
+    this.locationOnChanged = this.locationOnChanged.bind(this);
   }
-  componentDidMount() {
 
+  componentDidMount() {
     fetch(API + BATTLE_ENDPOINT)
       .then(response => response.json())
       .then(data => {
@@ -57,6 +55,19 @@ class App extends Component {
       .then(data => this.setState({ bossStats: data }))
       .catch(err => console.log(err))
   }
+
+  locationOnChanged(event) {
+    this.setState({ locationId: event.target.value });
+    console.log(`battleId ${this.state.battleId}`);
+    console.log(`locationId ${this.state.locationId}`);
+  }
+
+  battleOnChanged(event) {
+    this.setState({ battleId: event.target.value })
+    console.log(`battleId ${this.state.battleId}`);
+    console.log(`locationId ${this.state.locationId}`);
+  }
+
   render() {
     return (
       <div className="App">
@@ -68,12 +79,12 @@ class App extends Component {
             <Dropdown
               title="battles"
               items={this.state.battles}
-              onValueChanged={test}
+              onValueChanged={this.battleOnChanged}
               defaultValue={0} />
             <Dropdown
               title="locations"
               items={this.state.locations}
-              onValueChanged={test}
+              onValueChanged={this.locationOnChanged}
               defaultValue={1}
             />
             <button onClick={this.clickHandler}>Search</button>
