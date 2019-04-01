@@ -27,15 +27,11 @@ class App extends Component {
   componentDidMount() {
     fetch(API + BATTLE_ENDPOINT)
       .then(response => response.json())
-      .then(data => {
-        data.unshift({ id: 0, name: "Any" }); return data;
-      })
       .then(data => this.setState({ battles: data }))
       .catch(err => console.log(err));
 
     fetch(API + LOCATION_ENDPOINT)
       .then(response => response.json())
-      .then(data => { data.unshift({ id: 0, name: "Any" }); return data; })
       .then(data => this.setState({ locations: data }))
       .catch(err => console.log(err));
   }
