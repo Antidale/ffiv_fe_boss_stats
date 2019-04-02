@@ -9,5 +9,4 @@ const BattleInformation = ({ battleInfo }) => (
 	</div>
 )
 
-
 export default BattleInformation;

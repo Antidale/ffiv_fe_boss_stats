@@ -17,4 +17,3 @@ const BossDetail = ({ enemy }) => (
 );
 
 export default BossDetail
-
