@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Dropdown from './Dropdown/Dropdown';
-import BossStat from './BossStat/BossStat';
 import Header from './Header/Header';
+import BattleInformation from './BattleInformation/BattleInformation';
 
 const API = "https://localhost:5001/api/";
 const BATTLE_ENDPOINT = "bossbattle";
@@ -17,6 +17,7 @@ class App extends Component {
     this.state = {
       locations: [],
       battles: [],
+      bossStats: [],
       locationId: 1,
       battleId: 1
     };
@@ -84,7 +85,7 @@ class App extends Component {
             />
             <button onClick={this.clickHandler}>Search</button>
           </section>
-          <BossStat bossStat={this.state.bossStats} />
+          <BattleInformation battleInfo={this.state.bossStats} />
         </main>
       </div>
     );

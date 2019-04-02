@@ -1,0 +1,61 @@
+.container {
+	display: inline-flex;
+	display: -webkit-inline-flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	max-width: 50%;
+	min-width: 50%;
+}
+
+.detail-container {
+	border: 1px solid black;
+	border-radius: 2px;
+}
+
+.Child {
+	margin: auto;
+	padding: 5px;
+	font-size: 1.2em;
+	flex: 1 1 auto;
+	text-justify: newspaper
+}
+
+.test {
+	margin: auto;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.title {
+	background-color: slategrey;
+	margin: 0px;
+	padding: 2px;
+
+}
+
+/* Media Queries */
+
+/* Phone */
+@media all and (max-width: 575px) {
+	.stat-item {
+		width: 100%;
+	}
+}
+
+/* Tablet Portait / Phone Landscape (?) */
+@media all and (min-width: 576px) and (max-width: 768px) {
+	.stat-item {
+		width: 50%;
+	}
+}
+
+/* Tablet Landscape / Small computer window */
+@media all and (max-width: 991px) {
+	.stat-item {
+		width: 33%;
+	}
+}
+
