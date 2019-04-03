@@ -4,13 +4,17 @@
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-around;
-	max-width: 50%;
-	min-width: 50%;
+
+}
+
+.half-width {
+	width: 50%;
 }
 
 .detail-container {
 	border: 1px solid black;
 	border-radius: 2px;
+	width: 75%;
 }
 
 .Child {
@@ -21,9 +25,6 @@
 	text-justify: newspaper
 }
 
-.test {
-	margin: auto;
-}
 
 .full-width {
 	width: 100%;
@@ -33,7 +34,10 @@
 	background-color: slategrey;
 	margin: 0px;
 	padding: 2px;
+}
 
+.title-label {
+	font-variant: small-caps;
 }
 
 /* Media Queries */
@@ -41,21 +45,30 @@
 /* Phone */
 @media all and (max-width: 575px) {
 	.stat-item {
-		width: 100%;
+		flex-basis: 100%;
 	}
+
+	.container {
+		display: flex;
+	}
+
+	.detail-container {
+		width: 90%;
+	}
+
 }
 
 /* Tablet Portait / Phone Landscape (?) */
 @media all and (min-width: 576px) and (max-width: 768px) {
 	.stat-item {
-		width: 50%;
+		flex-basis: 50%;
 	}
 }
 
 /* Tablet Landscape / Small computer window */
 @media all and (max-width: 991px) {
 	.stat-item {
-		width: 33%;
+		flex-basis: 33%;
 	}
 }
 
