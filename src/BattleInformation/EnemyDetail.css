@@ -1,0 +1,89 @@
+.container {
+	display: inline-flex;
+	display: -webkit-inline-flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.half-width {
+	width: 50%;
+}
+
+.detail-container {
+	border: 1px solid black;
+	border-radius: 2px;
+	width: 75%;
+	align-self: auto;
+	margin-bottom: 5px;
+}
+
+.Child {
+	margin: auto;
+	padding: 5px;
+	font-size: 1.2em;
+	flex: 1 1 auto;
+}
+
+
+.full-width {
+	width: 100%;
+}
+
+.stat-item {
+	text-align: left;
+	margin-left: 3px;
+}
+
+.title {
+	background-color: slategrey;
+	margin: 0px;
+	padding: 2px;
+}
+
+.title-label {
+	font-variant: small-caps;
+}
+
+/* Media Queries */
+
+/* Phone */
+@media all and (max-width: 575px) {
+	.stat-item {
+		flex-basis: 100%;
+	}
+
+	/* .container {
+		display: flex;
+	} */
+
+	.detail-container {
+		width: 90%;
+	}
+
+}
+
+/* Tablet Portait / Phone Landscape (?) */
+@media all and (min-width: 576px) and (max-width: 768px) {
+	.stat-item {
+		flex-basis: 50%;
+	}
+
+	.container {
+		display: flex;
+	}
+}
+
+/* Tablet Landscape / Small computer window */
+@media all and (min-width: 769px)and (max-width: 991px) {
+	.stat-item {
+		flex-basis: 33%;
+	}
+}
+
+@media all and (min-width: 992px) {
+	.stat-item {
+		flex-basis: 25%;
+	}
+}
+
