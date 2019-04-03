@@ -4,7 +4,6 @@
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-around;
-
 }
 
 .half-width {
@@ -15,6 +14,8 @@
 	border: 1px solid black;
 	border-radius: 2px;
 	width: 75%;
+	align-self: auto;
+	margin-bottom: 5px;
 }
 
 .Child {
@@ -22,12 +23,16 @@
 	padding: 5px;
 	font-size: 1.2em;
 	flex: 1 1 auto;
-	text-justify: newspaper
 }
 
 
 .full-width {
 	width: 100%;
+}
+
+.stat-item {
+	text-align: left;
+	margin-left: 3px;
 }
 
 .title {
@@ -48,9 +53,9 @@
 		flex-basis: 100%;
 	}
 
-	.container {
+	/* .container {
 		display: flex;
-	}
+	} */
 
 	.detail-container {
 		width: 90%;
@@ -63,12 +68,22 @@
 	.stat-item {
 		flex-basis: 50%;
 	}
+
+	.container {
+		display: flex;
+	}
 }
 
 /* Tablet Landscape / Small computer window */
-@media all and (max-width: 991px) {
+@media all and (min-width: 769px)and (max-width: 991px) {
 	.stat-item {
 		flex-basis: 33%;
+	}
+}
+
+@media all and (min-width: 992px) {
+	.stat-item {
+		flex-basis: 25%;
 	}
 }
 
