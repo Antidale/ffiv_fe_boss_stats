@@ -12,19 +12,20 @@ const BossDetail = ({ enemy }) => (
 		</span>
 		<StatItem label="HP" value={enemy.hitPoints} />
 		<StatItem label="XP" value={enemy.experiencePoints} />
-		<StatItem label="Attack" value={enemy.hitPoints} />
-		<StatItem label="Accuracy" value={enemy.hitPoints} />
-		<StatItem label="Attack Multi" value={enemy.hitPoints} />
-		<StatItem label="Gil" value={enemy.gil} />
 		<StatItem label="Level" value={enemy.level} />
+		<StatItem label="Attack" value={enemy.attackPower} />
+		<StatItem label="Accuracy" value={enemy.attackPercent} />
+		<StatItem label="Attack Multi" value={enemy.attackMultiplier} />
+		<StatItem label="Spell Power" value={enemy.spellPower} />
+		<StatItem label="Max Speed" value={enemy.maxSpeed} />
+		<StatItem label="Min Speed" value={enemy.minSpeed} />
 		<StatItem label="Defense" value={enemy.defense} />
 		<StatItem label="Evade" value={enemy.evade} />
 		<StatItem label="Defense Multi" value={enemy.defenseMultiplier} />
 		<StatItem label="Magic Def" value={enemy.magicDefense} />
 		<StatItem label="Magic Evade" value={enemy.magicEvade} />
 		<StatItem label="Magic Def Multi" value={enemy.magicDefenseMultiplier} />
-		<StatItem label="Min Speed" value={enemy.minSpeed} />
-		<StatItem label="Max Speed" value={enemy.maxSpeed} />
+		<StatItem label="Gil" value={enemy.gil} />
 		<StatItem label="Script" value={enemy.scriptValue1} />
 		<StatItem label="Script" value={enemy.scriptValue2} />
 		<StatItem label="Script" value={enemy.scriptValue3} />

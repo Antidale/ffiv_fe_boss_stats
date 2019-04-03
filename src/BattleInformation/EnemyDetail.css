@@ -75,7 +75,7 @@
 }
 
 /* Tablet Landscape / Small computer window */
-@media all and (min-width: 769px)and (max-width: 991px) {
+@media all and (min-width: 769px) and (max-width: 991px) {
 	.stat-item {
 		flex-basis: 33%;
 	}
