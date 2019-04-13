@@ -21,49 +21,58 @@ class App extends Component {
       locationId: 1,
       battleId: 1
     };
-    this.clickHandler = this.clickHandler.bind(this);
+
     this.battleOnChanged = this.battleOnChanged.bind(this);
     this.locationOnChanged = this.locationOnChanged.bind(this);
+    this.getBattleInformation = this.getBattleInformation.bind(this);
+    this.fetchData = this.fetchData.bind(this);
   }
 
   componentDidMount() {
-    fetch(API + BATTLE_ENDPOINT)
-      .then(response => response.json())
-      .then(data => this.setState({ battles: data }))
-      .catch(err => console.log(err));
+    this.fetchData(
+      BATTLE_ENDPOINT,
+      data => this.setState({ battles: data })
+    );
 
-    fetch(API + LOCATION_ENDPOINT)
-      .then(response => response.json())
-      .then(data => this.setState({ locations: data }))
-      .catch(err => console.log(err));
+    this.fetchData(
+      LOCATION_ENDPOINT,
+      data => this.setState({ locations: data })
+    );
+
+    this.getBattleInformation(this.state.locationId, this.state.battleId);
   }
 
-  clickHandler() {
+  locationOnChanged(event) {
+    this.setState({ locationId: event.target.value });
+    this.getBattleInformation(event.target.value, this.state.battleId);
+  }
+
+  battleOnChanged(event) {
+    this.setState({ battleId: event.target.value });
+    this.getBattleInformation(this.state.locationId, event.target.value);
+  }
+
+  getBattleInformation(locationId, battleId) {
     let postBody = {
-      LocationId: this.state.locationId,
-      BattleId: this.state.battleId
+      LocationId: locationId,
+      BattleId: battleId
     };
     let postOptions = {
       method: "POST",
       body: JSON.stringify(postBody),
       headers: { "Content-Type": "application/json" }
     }
-    fetch(API + BOSSSTATS_ENDPOINT, postOptions)
+
+    this.fetchData(BOSSSTATS_ENDPOINT,
+      data => this.setState({ bossStats: data }),
+      postOptions)
+  }
+
+  fetchData(endpoint, stateFunction, paramsObject) {
+    fetch(API + endpoint, paramsObject)
       .then(response => response.json())
-      .then(data => this.setState({ bossStats: data }))
+      .then(stateFunction)
       .catch(err => console.log(err))
-  }
-
-  locationOnChanged(event) {
-    this.setState({ locationId: event.target.value });
-    console.log(`battleId ${this.state.battleId}`);
-    console.log(`locationId ${this.state.locationId}`);
-  }
-
-  battleOnChanged(event) {
-    this.setState({ battleId: event.target.value })
-    console.log(`battleId ${this.state.battleId}`);
-    console.log(`locationId ${this.state.locationId}`);
   }
 
   render() {
@@ -83,7 +92,6 @@ class App extends Component {
               onValueChanged={this.locationOnChanged}
               defaultValue={1}
             />
-            <button onClick={this.clickHandler}>Search</button>
           </section>
           <BattleInformation battleInfo={this.state.bossStats} />
         </main>
