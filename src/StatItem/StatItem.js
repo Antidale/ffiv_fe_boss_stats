@@ -4,7 +4,9 @@ import '../BattleInformation/EnemyDetail.css'
 
 const StatItem = ({ label, value, isTitle }) => (
 	<p className="stat-item">
-		<span className={"item-label " + (isTitle ? "title-label" : " ")}>{label}: </span>
+		<span className={
+			"label " +
+			(isTitle ? "title " : " ")}>{label}: </span>
 		{value}
 	</p>
 )

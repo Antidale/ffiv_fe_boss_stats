@@ -27,7 +27,6 @@ const BossDetail = ({ enemy }) => (
 		<StatItem label="Magic Def Multi" value={enemy.magicDefenseMultiplier} />
 		<StatItem label="Gil" value={enemy.gil} />
 		<StatItem label="Script" value={enemy.scriptValues.join(", ")} />
-
 	</div>
 );
 
