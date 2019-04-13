@@ -1,6 +1,5 @@
 import React from 'react';
 import './EnemyDetail.css';
-import '../StatItem/StatItem'
 import StatItem from '../StatItem/StatItem';
 
 const BossDetail = ({ enemy }) => (
@@ -10,8 +9,6 @@ const BossDetail = ({ enemy }) => (
 			<StatItem label="HP" value={enemy.hitPoints} isTitle />
 			<StatItem label="XP" value={enemy.experiencePoints} />
 		</span>
-
-
 		<StatItem label="Level" value={enemy.level} />
 		<StatItem label="Attack" value={enemy.attackPower} />
 		<StatItem label="Accuracy" value={enemy.attackPercent} />
