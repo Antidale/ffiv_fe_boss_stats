@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: "Sorts Mill Goudy";
   font-size: calc(10px + 2vmin);
   color:  #edf2f4;
   text-shadow: #424b54 1px 1px 1px;
