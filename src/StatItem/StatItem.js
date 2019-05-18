@@ -1,15 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../BattleInformation/EnemyDetail.css'
+import './StatItem.css'
 
-const StatItem = ({ label, value, isTitle }) => (
+const StatItem = ({ label, value, isTitle, hideLabel }) => (
 	<p className="stat-item">
 		<span className={
 			"label " +
-			(isTitle ? "title " : " ")}>{label}: </span>
-		{value}
+			(isTitle ? "title " : " ") +
+			(hideLabel ? "hidden " : " ")}>
+			{label}:
+				</span>
+		<span className="value">
+			{value}
+		</span>
+
 	</p>
 )
+
 
 StatItem.propTypes = {
 	label: PropTypes.string.isRequired,

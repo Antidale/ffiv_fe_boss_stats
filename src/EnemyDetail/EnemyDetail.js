@@ -3,9 +3,9 @@ import './EnemyDetail.css';
 import StatItem from '../StatItem/StatItem';
 
 const BossDetail = ({ enemy }) => (
-	<div className="container detail-container">
+	<section className="container detail-container">
 		<span className="full-width Child title no-margin container">
-			<StatItem label="Enemy" value={enemy.enemy} isTitle />
+			<StatItem label="Enemy" value={enemy.enemy} isTitle hideLabel />
 			<StatItem label="HP" value={enemy.hitPoints} isTitle />
 			<StatItem label="XP" value={enemy.experiencePoints} />
 		</span>
@@ -24,7 +24,7 @@ const BossDetail = ({ enemy }) => (
 		<StatItem label="Magic Def Multi" value={enemy.magicDefenseMultiplier} />
 		<StatItem label="Gil" value={enemy.gil} />
 		<StatItem label="Script" value={enemy.scriptValues.join(", ")} />
-	</div>
+	</section>
 );
 
 export default BossDetail

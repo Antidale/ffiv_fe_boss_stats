@@ -1,0 +1,29 @@
+.value {
+	font-size: 2em;
+	margin-left: .3em;
+}
+
+.stat-item {
+	text-align: left;
+	margin-left: 3px;
+	font-weight: 600;
+}
+
+.title {
+	background-color: #04215B;
+	color: #edf2f4;
+	padding: 2px;
+	font-size: 2.0em;
+	font-weight: 800
+}
+
+.label {
+	font-variant: small-caps;
+	font-family: 'Sorts Mill Goudy', 'serif';
+	font-size: 1em;
+	font-weight: 200
+}
+
+.hidden {
+	display: none;
+}
