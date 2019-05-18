@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../BattleInformation/EnemyDetail.css'
 import './StatItem.css'
 
 const StatItem = ({ label, value, isTitle, hideLabel }) => (
