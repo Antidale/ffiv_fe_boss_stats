@@ -6,6 +6,8 @@
 
 .Dropdown-h2 {
 	padding-right: 10px;
+	font-variant: small-caps;
+	font-family: "Sorts Mill Goudy"
 }
 
 select {

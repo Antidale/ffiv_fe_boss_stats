@@ -1,12 +1,12 @@
 import React from 'react';
-import EnemyDetail from './EnemyDetail';
+import EnemyDetail from '../EnemyDetail/EnemyDetail';
 
 const BattleInformation = ({ battleInfo }) => (
-	<div>
+	<article>
 		{battleInfo.map(enemy =>
 			<EnemyDetail key={enemy.id} enemy={enemy} />
 		)}
-	</div>
+	</article>
 )
 
 export default BattleInformation;

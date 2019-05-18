@@ -30,26 +30,7 @@
 	width: 100%;
 }
 
-.stat-item {
-	text-align: left;
-	margin-left: 3px;
-	font-weight: 600;
-}
 
-.title {
-	background-color: #04215B;
-	color: #edf2f4;
-	padding: 2px;
-	/* border-bottom: 3px solid #edf2f4;
-	border-radius: 0px 0px 10px 10px; */
-	font-size: 1.5em;
-	font-weight: 800
-}
-
-.label {
-	font-variant: small-caps;
-	font-size: .9em;
-}
 
 /* Media Queries */
 
