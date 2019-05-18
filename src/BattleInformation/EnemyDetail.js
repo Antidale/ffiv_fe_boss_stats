@@ -5,7 +5,7 @@ import StatItem from '../StatItem/StatItem';
 const BossDetail = ({ enemy }) => (
 	<div className="container detail-container">
 		<span className="full-width Child title no-margin container">
-			<StatItem label="Enemy" value={enemy.enemy} isTitle />
+			<StatItem label="Enemy" value={enemy.enemy} isTitle hideLabel />
 			<StatItem label="HP" value={enemy.hitPoints} isTitle />
 			<StatItem label="XP" value={enemy.experiencePoints} />
 		</span>

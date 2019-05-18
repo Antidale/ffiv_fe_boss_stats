@@ -82,12 +82,12 @@ class App extends Component {
         <main>
           <section>
             <Dropdown
-              title="battles"
+              title="Battles"
               items={this.state.battles}
               onValueChanged={this.battleOnChanged}
               defaultValue={0} />
             <Dropdown
-              title="locations"
+              title="Locations"
               items={this.state.locations}
               onValueChanged={this.locationOnChanged}
               defaultValue={1}
