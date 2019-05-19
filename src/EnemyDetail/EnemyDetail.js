@@ -1,11 +1,13 @@
 import React from 'react';
 import './EnemyDetail.css';
 import StatItem from '../StatItem/StatItem';
+import ScriptStat from '../StatItem/ScriptStat';
+import ItemTitle from '../StatItem/ItemTitle';
 
 const BossDetail = ({ enemy }) => (
 	<section className="container detail-container">
 		<span className="full-width Child title no-margin container">
-			<StatItem label="Enemy" value={enemy.enemy} isTitle hideLabel />
+			<ItemTitle value={enemy.enemy} isTitle hideLabel />
 			<StatItem label="HP" value={enemy.hitPoints} isTitle />
 			<StatItem label="XP" value={enemy.experiencePoints} />
 		</span>
@@ -23,7 +25,7 @@ const BossDetail = ({ enemy }) => (
 		<StatItem label="Magic Evade" value={enemy.magicEvade} />
 		<StatItem label="Magic Def Multi" value={enemy.magicDefenseMultiplier} />
 		<StatItem label="Gil" value={enemy.gil} />
-		<StatItem label="Script" value={enemy.scriptValues.join(", ")} />
+		<ScriptStat values={enemy.scriptValues} />
 	</section>
 );
 
