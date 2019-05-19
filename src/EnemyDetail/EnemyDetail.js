@@ -2,11 +2,12 @@ import React from 'react';
 import './EnemyDetail.css';
 import StatItem from '../StatItem/StatItem';
 import ScriptStat from '../StatItem/ScriptStat';
+import ItemTitle from '../StatItem/ItemTitle';
 
 const BossDetail = ({ enemy }) => (
 	<section className="container detail-container">
 		<span className="full-width Child title no-margin container">
-			<StatItem label="Enemy" value={enemy.enemy} isTitle hideLabel />
+			<ItemTitle value={enemy.enemy} isTitle hideLabel />
 			<StatItem label="HP" value={enemy.hitPoints} isTitle />
 			<StatItem label="XP" value={enemy.experiencePoints} />
 		</span>
