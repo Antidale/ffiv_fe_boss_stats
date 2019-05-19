@@ -7,13 +7,13 @@ const ScriptStat = ({ values }) => {
 	if (values.length > 0) {
 		return (
 			<div className="full-width">
-				<hr />
-
-
-				<span className="label">Scripts:</span>
-				<br />
-				<ul>
-					{values.map(value => <li>{value}</li>)}
+				<h3 className="full-width">
+					<span className="header-label">
+						Scripts:
+					</span>
+				</h3>
+				<ul className="container">
+					{values.map((value, index) => <li className="value" key={index}>{value}</li>)}
 				</ul>
 			</div>
 		)
