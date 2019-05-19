@@ -1,6 +1,7 @@
 import React from 'react';
 import './EnemyDetail.css';
 import StatItem from '../StatItem/StatItem';
+import ScriptStat from '../StatItem/ScriptStat';
 
 const BossDetail = ({ enemy }) => (
 	<section className="container detail-container">
@@ -23,7 +24,7 @@ const BossDetail = ({ enemy }) => (
 		<StatItem label="Magic Evade" value={enemy.magicEvade} />
 		<StatItem label="Magic Def Multi" value={enemy.magicDefenseMultiplier} />
 		<StatItem label="Gil" value={enemy.gil} />
-		<StatItem label="Script" value={enemy.scriptValues.join(", ")} />
+		<ScriptStat values={enemy.scriptValues} />
 	</section>
 );
 
