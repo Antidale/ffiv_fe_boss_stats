@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
-import Dropdown from './Dropdown/Dropdown';
 import Header from './Header/Header';
-import BattleInformation from './BattleInformation/BattleInformation';
+import BossStats from './BossStats/BossStats';
 
 const API = "https://localhost:5001/api/";
-const BATTLE_ENDPOINT = "bossbattle";
-const LOCATION_ENDPOINT = "battlelocation";
-const BOSSSTATS_ENDPOINT = "bossstats";
+
 
 class App extends Component {
 
@@ -21,51 +19,9 @@ class App extends Component {
       locationId: 1,
       battleId: 1
     };
-
-    this.battleOnChanged = this.battleOnChanged.bind(this);
-    this.locationOnChanged = this.locationOnChanged.bind(this);
-    this.getBattleInformation = this.getBattleInformation.bind(this);
-    this.fetchData = this.fetchData.bind(this);
   }
 
   componentDidMount() {
-    this.fetchData(
-      BATTLE_ENDPOINT,
-      data => this.setState({ battles: data })
-    );
-
-    this.fetchData(
-      LOCATION_ENDPOINT,
-      data => this.setState({ locations: data })
-    );
-
-    this.getBattleInformation(this.state.locationId, this.state.battleId);
-  }
-
-  locationOnChanged(event) {
-    this.setState({ locationId: event.target.value });
-    this.getBattleInformation(event.target.value, this.state.battleId);
-  }
-
-  battleOnChanged(event) {
-    this.setState({ battleId: event.target.value });
-    this.getBattleInformation(this.state.locationId, event.target.value);
-  }
-
-  getBattleInformation(locationId, battleId) {
-    let postBody = {
-      LocationId: locationId,
-      BattleId: battleId
-    };
-    let postOptions = {
-      method: "POST",
-      body: JSON.stringify(postBody),
-      headers: { "Content-Type": "application/json" }
-    }
-
-    this.fetchData(BOSSSTATS_ENDPOINT,
-      data => this.setState({ bossStats: data }),
-      postOptions)
   }
 
   fetchData(endpoint, stateFunction, paramsObject) {
@@ -77,25 +33,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Header />
-        <main>
-          <section>
-            <Dropdown
-              title="Battles"
-              items={this.state.battles}
-              onValueChanged={this.battleOnChanged}
-              defaultValue={0} />
-            <Dropdown
-              title="Locations"
-              items={this.state.locations}
-              onValueChanged={this.locationOnChanged}
-              defaultValue={1}
-            />
-          </section>
-          <BattleInformation battleInfo={this.state.bossStats} />
-        </main>
-      </div>
+      <Router>
+        <div className="App">
+          <Header />
+          <main>
+            <BossStats />
+          </main>
+        </div>
+      </Router>
     );
   }
 }
