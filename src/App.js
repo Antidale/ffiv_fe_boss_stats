@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './App.css';
 import Header from './Header/Header';
+import Home from './Home/home';
 import BossStats from './BossStats/BossStats';
 
 const API = "https://localhost:5001/api/";
@@ -37,7 +38,8 @@ class App extends Component {
         <div className="App">
           <Header />
           <main>
-            <BossStats />
+            <Route path="/" exact component={Home} />
+            <Route path="/boss-stats/" component={BossStats} />
           </main>
         </div>
       </Router>
