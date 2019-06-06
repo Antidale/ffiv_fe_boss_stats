@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Dropdown from '../Dropdown/Dropdown';
 import BattleInformation from '../BattleInformation/BattleInformation';
+import Api from '../Api/Api'
 
-const API = "https://localhost:5001/api/";
 const BATTLE_ENDPOINT = "bossbattle";
 const LOCATION_ENDPOINT = "battlelocation";
 const BOSSSTATS_ENDPOINT = "bossstats";
@@ -22,16 +22,15 @@ class BossStats extends Component {
 		this.battleOnChanged = this.battleOnChanged.bind(this);
 		this.locationOnChanged = this.locationOnChanged.bind(this);
 		this.getBattleInformation = this.getBattleInformation.bind(this);
-		this.fetchData = this.fetchData.bind(this);
 	}
 
 	componentDidMount() {
-		this.fetchData(
+		Api.fetchData(
 			BATTLE_ENDPOINT,
 			data => this.setState({ battles: data })
 		);
 
-		this.fetchData(
+		Api.fetchData(
 			LOCATION_ENDPOINT,
 			data => this.setState({ locations: data })
 		);
@@ -60,16 +59,9 @@ class BossStats extends Component {
 			headers: { "Content-Type": "application/json" }
 		}
 
-		this.fetchData(BOSSSTATS_ENDPOINT,
+		Api.fetchData(BOSSSTATS_ENDPOINT,
 			data => this.setState({ bossStats: data }),
 			postOptions)
-	}
-
-	fetchData(endpoint, stateFunction, paramsObject) {
-		fetch(API + endpoint, paramsObject)
-			.then(response => response.json())
-			.then(stateFunction)
-			.catch(err => console.log(err))
 	}
 
 	render() {
