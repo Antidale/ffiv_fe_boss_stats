@@ -7,7 +7,7 @@ const BATTLE_ENDPOINT = "bossbattle";
 const LOCATION_ENDPOINT = "battlelocation";
 const BOSSSTATS_ENDPOINT = "bossstats";
 
-class BossStats extends Component {
+class BossPage extends Component {
 	constructor(props) {
 		super(props);
 
@@ -84,4 +84,4 @@ class BossStats extends Component {
 	}
 }
 
-export default BossStats;
+export default BossPage;

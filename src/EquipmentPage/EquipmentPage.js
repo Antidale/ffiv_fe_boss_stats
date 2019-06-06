@@ -3,7 +3,7 @@ import Api from '../Api/Api';
 
 const EQUIPMENT_ENDPOINT = "equipment";
 
-class EquipmentStats extends Component {
+class EquipmentPage extends Component {
 	constructor(props) {
 		super(props);
 
@@ -28,4 +28,4 @@ class EquipmentStats extends Component {
 	}
 }
 
-export default EquipmentStats;
+export default EquipmentPage;

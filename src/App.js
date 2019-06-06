@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Header from './Header/Header';
 import Home from './Home/Home';
-import BossStats from './BossStats/BossStats';
-import EquipmentStats from './EquipmentStats/EquipmentStats';
+import BossPage from './BossPage/BossPage';
+import EquipmentPage from './EquipmentPage/EquipmentPage';
 
 const API = "https://localhost:5001/api/";
 
@@ -30,8 +30,8 @@ class App extends Component {
           <Header />
           <main>
             <Route path="/" exact component={Home} />
-            <Route path="/boss-stats/" component={BossStats} />
-            <Route path="/equipment/" component={EquipmentStats} />
+            <Route path="/boss-stats/" component={BossPage} />
+            <Route path="/equipment/" component={EquipmentPage} />
           </main>
         </div>
       </Router>
