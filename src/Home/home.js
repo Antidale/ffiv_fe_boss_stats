@@ -1,10 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 
 const Home = () => (
 	<div>
-		<Link to="/equipment/">Equipment</Link>
-		<Link to="/boss-stats/">Boss Stats</Link>
+		<p>Welcome to a site with some helpful gameplay information about Free Enterprise</p>
 	</div>
 
 )

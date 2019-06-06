@@ -10,7 +10,6 @@ class EquipmentStats extends Component {
 		this.state = {
 			equipment: []
 		}
-
 	}
 
 	componentDidMount() {

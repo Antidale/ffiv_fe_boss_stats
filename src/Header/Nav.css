@@ -1,0 +1,12 @@
+ul {
+	align-content: flex-end;
+	float: right;
+}
+
+li {
+	background: white;
+}
+
+a {
+	text-decoration: none;
+}

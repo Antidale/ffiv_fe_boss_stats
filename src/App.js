@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Header from './Header/Header';
-import Home from './Home/home';
+import Home from './Home/Home';
 import BossStats from './BossStats/BossStats';
 import EquipmentStats from './EquipmentStats/EquipmentStats';
 
@@ -21,16 +21,6 @@ class App extends Component {
       locationId: 1,
       battleId: 1
     };
-  }
-
-  componentDidMount() {
-  }
-
-  fetchData(endpoint, stateFunction, paramsObject) {
-    fetch(API + endpoint, paramsObject)
-      .then(response => response.json())
-      .then(stateFunction)
-      .catch(err => console.log(err))
   }
 
   render() {
