@@ -6,9 +6,6 @@ import Home from './Home/Home';
 import BossPage from './BossPage/BossPage';
 import EquipmentPage from './EquipmentPage/EquipmentPage';
 
-const API = "https://localhost:5001/api/";
-
-
 class App extends Component {
 
   constructor(props) {

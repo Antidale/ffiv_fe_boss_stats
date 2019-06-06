@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Api from '../Api/Api';
+import EquipmentItem from "../EquipmentItem/EquipmentItem"
 
 const EQUIPMENT_ENDPOINT = "equipment";
 
@@ -8,22 +9,23 @@ class EquipmentPage extends Component {
 		super(props);
 
 		this.state = {
-			equipment: []
+			equipmentList: []
 		}
 	}
 
 	componentDidMount() {
 		Api.fetchData(
 			EQUIPMENT_ENDPOINT,
-			data => this.setState({ equipment: data })
+			data => this.setState({ equipmentList: data })
 		)
 	}
 
 	render() {
 		return (
-			<div>
-				{this.state.equipment.toString()}
-			</div>
+			<article>
+				{this.state.equipmentList.map(item =>
+					<EquipmentItem key={item.id} item={item} />)}
+			</article>
 		)
 	}
 }

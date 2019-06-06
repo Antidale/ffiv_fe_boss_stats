@@ -66,7 +66,7 @@ class BossPage extends Component {
 
 	render() {
 		return (
-			<section>
+			<React.Fragment>
 				<Dropdown
 					title="Battles"
 					items={this.state.battles}
@@ -76,10 +76,9 @@ class BossPage extends Component {
 					title="Locations"
 					items={this.state.locations}
 					onValueChanged={this.locationOnChanged}
-					defaultValue={1}
-				/>
+					defaultValue={1} />
 				<BattleInformation battleInfo={this.state.bossStats} />
-			</section>
+			</React.Fragment>
 		)
 	}
 }
