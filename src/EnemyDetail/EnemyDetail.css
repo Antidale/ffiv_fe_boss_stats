@@ -30,7 +30,9 @@
 	width: 100%;
 }
 
-
+.header-icon {
+	padding-top: 30px;
+}
 
 /* Media Queries */
 

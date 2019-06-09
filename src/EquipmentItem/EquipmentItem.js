@@ -7,10 +7,8 @@ import ScriptStat from '../StatItem/ScriptStat';
 const EquipmentItem = ({ item }) => (
 	<section className="container detail-container">
 		<span className="full-width Child title no-margin container">
-			<img height="64" width="64" src={`/temp/${item.icon}.gif`} alt={item.category} />
+			<img className="header-icon" height="64" width="64" src={`/temp/${item.icon}.gif`} alt={item.category} />
 			<ItemTitle value={item.name} isTitle hideLabel />
-			<StatItem value={item.category} label={"Category"} />
-			<StatItem value={item.equipmentType} label={"Type"} />
 		</span>
 		<StatItem value={item.str} label="Str" />
 		<StatItem value={item.agi} label="Agi" />
