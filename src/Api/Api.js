@@ -1,4 +1,4 @@
-const API_URL = "https://localhost:5001/api/";
+const API_URL = "https://free-enterprise-info-api.herokuapp.com/api/";
 
 const Api = {
 	fetchData: function (endpoint, stateFunction, paramsObject) {
