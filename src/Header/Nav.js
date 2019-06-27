@@ -4,8 +4,8 @@ import './Nav.css';
 
 const Navigation = () => (
 	<ul>
-		<li><Link to={process.env.REACT_APP_URL_PREFIX + "/equipment/"}>Equipment</Link></li>
-		<li><Link to={process.env.REACT_APP_URL_PREFIX + "/boss-stats/"}>Boss Stats</Link></li>
+		<li><Link to="/equipment/">Equipment</Link></li>
+		<li><Link to="/boss-stats/">Boss Stats</Link></li>
 	</ul>
 )
 
