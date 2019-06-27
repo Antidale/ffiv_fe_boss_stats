@@ -2,6 +2,7 @@
   "name": "ffiv_fe_boss_stats",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ff4-fe-info.rubrics-cubed.com/",
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
