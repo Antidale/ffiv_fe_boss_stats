@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Header from './Header/Header';
 import Home from './Home/Home';
@@ -27,8 +27,8 @@ class App extends Component {
           <Header />
           <main>
             <Route path="/" exact component={Home} />
-            <Route path={process.env.REACT_APP_URL_PREFIX + "/boss-stats/"} component={BossPage} />
-            <Route path={process.env.REACT_APP_URL_PREFIX + "/equipment/"} component={EquipmentPage} />
+            <Route path="/boss-stats/" component={BossPage} />
+            <Route path="/equipment/" component={EquipmentPage} />
           </main>
         </div>
       </Router>
