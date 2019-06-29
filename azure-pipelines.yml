@@ -19,6 +19,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+
+- bash: echo $(patch)
+
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
