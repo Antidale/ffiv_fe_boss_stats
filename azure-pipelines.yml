@@ -20,7 +20,7 @@ pool:
 
 steps:
 
-- bash: echo $(patch)
+- bash: echo $(build.sourcebranchname) - $(patch)
 
 - task: NodeTool@0
   inputs:
