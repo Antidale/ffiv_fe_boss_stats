@@ -4,6 +4,10 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 variables:
   CI: true
+  major: 0
+  minor: 1
+  patch: $[counter(variables['$(major)-$(build.sourcebranchname)'], 0)]
+  build: $(Build.BuildId)
 
 pr:
 - master
