@@ -71,12 +71,14 @@ class BossPage extends Component {
 					title="Battles"
 					items={this.state.battles}
 					onValueChanged={this.battleOnChanged}
-					defaultValue={0} />
+					initialValue={this.state.battleId}
+				/>
 				<Dropdown
 					title="Locations"
 					items={this.state.locations}
 					onValueChanged={this.locationOnChanged}
-					defaultValue={1} />
+					initialValue={this.state.locationId}
+				/>
 				<BattleInformation battleInfo={this.state.bossStats} />
 			</React.Fragment>
 		)
