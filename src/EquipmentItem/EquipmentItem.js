@@ -2,7 +2,7 @@ import React from 'react';
 import '../EnemyDetail/EnemyDetail.css';
 import StatItem from '../StatItem/StatItem';
 import ItemTitle from '../StatItem/ItemTitle';
-import ScriptStat from '../StatItem/ScriptStat';
+import EquipBy from '../EquipBy/EquipBy';
 
 const EquipmentItem = ({ item }) => (
 	<section className="container detail-container">
@@ -16,7 +16,7 @@ const EquipmentItem = ({ item }) => (
 		<StatItem value={item.wil} label="Wil" />
 		<StatItem value={item.wis} label="Wis" />
 		<StatItem value={item.strongAgainst} label="Strong Against" />
-		<ScriptStat values={item.canEquip} />
+		<EquipBy values={item.canEquip} />
 	</section>
 );
 
