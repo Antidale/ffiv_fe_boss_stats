@@ -1,0 +1,27 @@
+ul {
+	margin: 0 4em 1em 4em;
+	padding: 0;
+	align-content: space-around;
+}
+
+li {
+	padding-left: .5em;
+	display: inline-block;
+	align-items: space-around;
+    background-color: #edf2f4;
+}
+
+h3 {
+	background-color: #04215B;
+	text-align: left;
+	color:  #edf2f4;
+	padding: .5em 0;
+}
+
+.header-label {
+	font-family: "Sorts Mill Goudy";
+	font-size: 1.5em;
+	margin: 0 1em;
+    float:inline-start;
+    vertical-align:bottom;
+}
