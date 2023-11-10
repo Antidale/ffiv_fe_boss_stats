@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './StatItem.css'
 
-const StatItem = ({ label, value, isTitle, hideLabel }) => (
-	<p className="stat-item">
+const StatItem = ({ label, value, hoverText, isTitle, hideLabel }) => (
+	<p className="stat-item" title={hoverText}>
 		<span className={
 			"label " +
 			(isTitle ? "title " : " ") +
@@ -16,7 +16,6 @@ const StatItem = ({ label, value, isTitle, hideLabel }) => (
 
 	</p>
 )
-
 
 StatItem.propTypes = {
 	label: PropTypes.string.isRequired,
