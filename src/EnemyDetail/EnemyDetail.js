@@ -1,7 +1,7 @@
 import React from 'react';
 import './EnemyDetail.css';
 import StatItem from '../StatItem/StatItem';
-// import ScriptStat from '../StatItem/ScriptStat';
+import Note from '../StatItem/Note';
 import ItemTitle from '../StatItem/ItemTitle';
 
 const BossDetail = ({ enemy }) => (
@@ -27,7 +27,7 @@ const BossDetail = ({ enemy }) => (
 			<StatItem label="Defense" value={enemy.defense} />
 			<StatItem label="Magic Def" value={enemy.magicDefense} />
 			<StatItem label="Gil" value={enemy.gil} />
-			{/* <ScriptStat values={enemy.scriptValues} /> */}
+			<Note value={enemy.notes} />
 		</details>
 	</section>
 );
