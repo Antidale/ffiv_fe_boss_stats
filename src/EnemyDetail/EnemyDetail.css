@@ -34,6 +34,14 @@
 	padding-top: 30px;
 }
 
+details > summary {
+	list-style: none;
+}
+
+  details > summary::-webkit-details-marker {
+	display: none;
+}
+
 /* Media Queries */
 
 /* Phone */
@@ -75,4 +83,3 @@
 		flex-basis: 20%;
 	}
 }
-
