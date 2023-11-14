@@ -4,7 +4,7 @@ ul {
 	align-content: space-around;
 }
 
-li {
+.portrait-background {
 	padding-left: .5em;
 	display: inline-block;
 	align-items: space-around;

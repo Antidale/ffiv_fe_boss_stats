@@ -10,8 +10,8 @@ const ScriptStat = ({ values }) => {
                 <span className="header-label">
                     Equippable By:
                 </span>
-				<ul className="container">
-					{values.map((value, index) => <li key={index}><img className="header-icon" src={`/img/${value}.gif`} alt={value} /></li>)}
+				<ul className="container portrait-background">
+					{values.map((value, index) => <li key={index} className='portrait-background'><img className="header-icon" src={`/img/${value}.gif`} alt={value} /></li>)}
 				</ul>
 			</div>
 		)
