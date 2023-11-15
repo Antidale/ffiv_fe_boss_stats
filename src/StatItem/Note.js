@@ -8,13 +8,11 @@ const Note = ({ value }) => {
 		return (
 			<div className="full-width">
 				<h3 className="full-width">
-					<span className="header-label">
+					<span>
 						Notes:
 					</span>
 				</h3>
-                <p>
                     {value}
-                </p>
 			</div>
 		)
 	}
