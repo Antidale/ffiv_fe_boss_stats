@@ -3,6 +3,7 @@ import './EnemyDetail.css';
 import StatItem from '../StatItem/StatItem';
 import Note from '../StatItem/Note';
 import ItemTitle from '../StatItem/ItemTitle';
+import Utils from '../Utils/Utils';
 
 const BossDetail = ({ enemy }) => (
 	<section >
@@ -15,12 +16,12 @@ const BossDetail = ({ enemy }) => (
 				</span>
 			</summary>
 			<StatItem label="Level" value={enemy.level} />
-			<StatItem label="Average Punch" value={calculateDamage(enemy)} 
+			<StatItem label="Average Punch" value={Utils.calculateDamage(enemy)} 
 					  hoverText="Does not include defenses"/>
-			<StatItem label={( isSingleSpeed(enemy)
+			<StatItem label={( Utils.isSingleSpeed(enemy)
 						? "Speed"
 						: "Speed Range")} 
-					  value={(isSingleSpeed(enemy) 
+					  value={( Utils.isSingleSpeed(enemy) 
 						? enemy.maxSpeed 
 						: enemy.minSpeed + " to " + enemy.maxSpeed)} />
 			<StatItem label="Spell Power" value={enemy.spellPower} />
@@ -31,20 +32,5 @@ const BossDetail = ({ enemy }) => (
 		</details>
 	</section>
 );
-
-const calculateDamage = (enemy) => (
-	Math.floor((
-		//base
-		enemy.attackPower * enemy.attackMultiplier * enemy.attackPercent / 100 
-		+ 
-		// 1.5x possible multiplier
-		enemy.attackPower * enemy.attackMultiplier * enemy.attackPercent * 1.5 / 100)
-		//average them together
-		/ 2)
-)
-
-const isSingleSpeed = (enemy) => (
-	enemy.maxSpeed === enemy.minSpeed
-)
 
 export default BossDetail
