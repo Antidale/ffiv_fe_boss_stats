@@ -11,7 +11,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 5,
             "maxSpeed": 5,
-            "spellPower": 1
+            "spellPower": 1,
+            "valMagicDef": 170,
+            "valDefense": "5 0%x0"
         },
         {
             "location": "Asura (Feymarch)",
@@ -23,7 +25,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 66,
             "maxSpeed": 66,
-            "spellPower": 69
+            "spellPower": 69,
+            "valMagicDef": 255,
+            "valDefense": "0 0%x0"
         },
         {
             "location": "Baigan (Baron Castle 1)",
@@ -35,7 +39,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 8,
             "maxSpeed": 8,
-            "spellPower": 9
+            "spellPower": 9,
+            "valMagicDef": 254,
+            "valDefense": "0 0%x0"
         },
         {
             "location": "Baron Guards (Baron Inn 1)",
@@ -47,7 +53,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 11,
             "maxSpeed": 14,
-            "spellPower": 26
+            "spellPower": 26,
+            "valMagicDef": 255,
+            "valDefense": "4 90%x4"
         },
         {
             "location": "Baron Throne Room",
@@ -59,7 +67,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 15,
             "maxSpeed": 15,
-            "spellPower": 29
+            "spellPower": 29,
+            "valMagicDef": 255,
+            "valDefense": "6 70%x5"
         },
         {
             "location": "Calbrena (Dwarf Castle 1)",
@@ -71,7 +81,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 11,
             "maxSpeed": 11,
-            "spellPower": 41
+            "spellPower": 41,
+            "valMagicDef": 255,
+            "valDefense": "5 80%x4"
         },
         {
             "location": "Cave Bahamut",
@@ -83,7 +95,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 27,
             "maxSpeed": 27,
-            "spellPower": 17
+            "spellPower": 17,
+            "valMagicDef": 170,
+            "valDefense": "4 0%x0"
         },
         {
             "location": "Cave Magnes",
@@ -95,7 +109,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 11,
             "maxSpeed": 11,
-            "spellPower": 15
+            "spellPower": 15,
+            "valMagicDef": 255,
+            "valDefense": "5 0%x0"
         },
         {
             "location": "CPU (Giant 2)",
@@ -107,7 +123,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 38,
             "maxSpeed": 38,
-            "spellPower": 127
+            "spellPower": 127,
+            "valMagicDef": 255,
+            "valDefense": "16 90%x2"
         },
         {
             "location": "Dark Imp (Tower Key)",
@@ -119,7 +137,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 18,
             "maxSpeed": 21,
-            "spellPower": 6
+            "spellPower": 6,
+            "valMagicDef": 0,
+            "valDefense": "0 0%x0"
         },
         {
             "location": "Dark Knight Cecil (Ordeals 3)",
@@ -131,7 +151,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 5,
             "maxSpeed": 5,
-            "spellPower": 7
+            "spellPower": 7,
+            "valMagicDef": 254,
+            "valDefense": "0 0%x0"
         },
         {
             "location": "D Lunar (Lunar Sub)",
@@ -143,7 +165,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 30,
             "maxSpeed": 30,
-            "spellPower": 36
+            "spellPower": 36,
+            "valMagicDef": 255,
+            "valDefense": "16 90%x2"
         },
         {
             "location": "Dr Lugae (Lower Babil - Top)",
@@ -155,7 +179,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 27,
             "maxSpeed": 27,
-            "spellPower": 7
+            "spellPower": 7,
+            "valMagicDef": 0,
+            "valDefense": "4 90%x4"
         },
         {
             "location": "Eblan Royalty (Upper Babil 1)",
@@ -167,7 +193,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 53,
             "maxSpeed": 53,
-            "spellPower": 6
+            "spellPower": 6,
+            "valMagicDef": 0,
+            "valDefense": "0 0%x0"
         },
         {
             "location": "Elements (Giant 1)",
@@ -179,7 +207,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 89,
             "maxSpeed": 89,
-            "spellPower": 15
+            "spellPower": 15,
+            "valMagicDef": 86,
+            "valDefense": "11 82%x2"
         },
         {
             "location": "Fabul Defense",
@@ -191,7 +221,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 6,
             "maxSpeed": 9,
-            "spellPower": 6
+            "spellPower": 6,
+            "valMagicDef": 254,
+            "valDefense": "6 70%x5"
         },
         {
             "location": "Golbez (Dwarf Castle 2)",
@@ -203,7 +235,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 27,
             "maxSpeed": 27,
-            "spellPower": 1
+            "spellPower": 1,
+            "valMagicDef": 0,
+            "valDefense": "0 0%x0"
         },
         {
             "location": "Kaipo Inn",
@@ -215,7 +249,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 2,
             "maxSpeed": 4,
-            "spellPower": 4
+            "spellPower": 4,
+            "valMagicDef": 255,
+            "valDefense": "0 0%x0"
         },
         {
             "location": "Karate (Baron Inn 2)",
@@ -227,7 +263,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 4,
             "maxSpeed": 7,
-            "spellPower": 12
+            "spellPower": 12,
+            "valMagicDef": 0,
+            "valDefense": "0 0%x0"
         },
         {
             "location": "Leviatan (Feymarch)",
@@ -239,7 +277,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 53,
             "maxSpeed": 53,
-            "spellPower": 34
+            "spellPower": 34,
+            "valMagicDef":255,
+            "valDefense": "20 80%x1"
         },
         {
             "location": "Magus Sisters (Zot 1)",
@@ -251,7 +291,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 7,
             "maxSpeed": 7,
-            "spellPower": 11
+            "spellPower": 11,
+            "valMagicDef": 254,
+            "valDefense": "5 80%x4"
         },
         {
             "location": "Milon (Ordeals 1)",
@@ -263,7 +305,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 8,
             "maxSpeed": 8,
-            "spellPower": 14
+            "spellPower": 14,
+            "valMagicDef": 0,
+            "valDefense": "5 80%x4"
         },
         {
             "location": "Milon Z (Ordeals 2)",
@@ -275,7 +319,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 9,
             "maxSpeed": 9,
-            "spellPower": 31
+            "spellPower": 31,
+            "valMagicDef": 255,
+            "valDefense": "4 90%x4"
         },
         {
             "location": "Mist Cave",
@@ -287,7 +333,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 5,
             "maxSpeed": 5,
-            "spellPower": 10
+            "spellPower": 10,
+            "valMagicDef": 255,
+            "valDefense": "20 80%x1"
         },
         {
             "location": "Mt Hobs",
@@ -299,7 +347,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 7,
             "maxSpeed": 7,
-            "spellPower": 5
+            "spellPower": 5,
+            "valMagicDef": 174,
+            "valDefense": "0 0%x0"
         },
         {
             "location": "Odin (Baron Castle Basement)",
@@ -311,7 +361,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 43,
             "maxSpeed": 46,
-            "spellPower": 95
+            "spellPower": 95,
+            "valMagicDef": 254,
+            "valDefense": "11 85%x2"
         },
         {
             "location": "Ogopogo (Lunar Core)",
@@ -323,7 +375,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 38,
             "maxSpeed": 38,
-            "spellPower": 127
+            "spellPower": 127,
+            "valMagicDef": 255,
+            "valDefense": "16 90%x2"
         },
         {
             "location": "Pale Dim (Lunar Sub)",
@@ -335,7 +389,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 40,
             "maxSpeed": 43,
-            "spellPower": 31
+            "spellPower": 31,
+            "valMagicDef": 20,
+            "valDefense": "5 99%x2"
         },
         {
             "location": "Plague (Lunar Sub)",
@@ -347,7 +403,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 29,
             "maxSpeed": 32,
-            "spellPower": 35
+            "spellPower": 35,
+            "valMagicDef": 255,
+            "valDefense": "20 99%x2"
         },
         {
             "location": "Rubicant (Upper Babil 2)",
@@ -359,7 +417,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 38,
             "maxSpeed": 38,
-            "spellPower": 16
+            "spellPower": 16,
+            "valMagicDef": 255,
+            "valDefense": "4 90%x4"
         },
         {
             "location": "Sealed Cave",
@@ -371,7 +431,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 66,
             "maxSpeed": 66,
-            "spellPower": 79
+            "spellPower": 79,
+            "valMagicDef": 255,
+            "valDefense": "5 80%x4"
         },
         {
             "location": "Valvalis (Zot 2)",
@@ -383,7 +445,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 18,
             "maxSpeed": 18,
-            "spellPower": 63
+            "spellPower": 63,
+            "valMagicDef": 255,
+            "valDefense": "0 0%x0"
         },
         {
             "location": "Watery Passage",
@@ -395,7 +459,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 31,
             "maxSpeed": 31,
-            "spellPower": 4
+            "spellPower": 4,
+            "valMagicDef": 255,
+            "valDefense": "0 0%x0"
         },
         {
             "location": "Wyvern (Lunar Sub)",
@@ -407,7 +473,9 @@ const SummaryData =
             "magicDefense": 0,
             "minSpeed": 43,
             "maxSpeed": 46,
-            "spellPower": 8
+            "spellPower": 8,
+            "valMagicDef": 255,
+            "valDefense": "20 99%x2"
         }
     ]
 
