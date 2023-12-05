@@ -6,10 +6,10 @@ import ItemTitle from '../StatItem/ItemTitle';
 import Utils from '../Utils/Utils';
 
 const BossDetail = ({ enemy }) => (
-	<section >
-		<details className="inline-flex flex-row justify-around flex-wrap self-auto">
+	<section className=''>
+		<details className="">
 			<summary>
-				<span className="full-width Child title no-margin container">
+				<span className="">
 					<ItemTitle value={enemy.enemy} isTitle hideLabel />
 					<StatItem label="HP" value={enemy.hitPoints} isTitle />
 					<StatItem label="XP" value={enemy.experiencePoints} />

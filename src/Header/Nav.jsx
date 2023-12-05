@@ -2,13 +2,13 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navigation = () => (
-	<div className=' inline-flex'>
-		<ul className=' inline-block'>
-			<li className='text-2xl font-normal self-end'><NavLink to="/">Location Summary</NavLink></li>
-			<li className='text-2xl font-normal self-end'><NavLink to="/boss-stats/">Boss Stats</NavLink></li>
-			<li className='text-2xl font-normal self-end'><NavLink to="/equipment/">Equipment</NavLink></li>
-		</ul>
-	</div>
+	<nav>
+		<div className='container flex items-center justify-center p-6 mx-auto text-gray-200 capitalize text-2xl font-semibold'>
+			<NavLink className='border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-600 mx-1.5 sm:mx-6' to="/">Location Summary</NavLink>
+			<NavLink className='border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-600 mx-1.5 sm:mx-6' to="/boss-stats/">Boss Stats</NavLink>
+			{/* <NavLink className='border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-600 mx-1.5 sm:mx-6' to="/equipment/">Equipment</NavLink> */}
+		</div>
+	</nav>
 )
 
 export default Navigation

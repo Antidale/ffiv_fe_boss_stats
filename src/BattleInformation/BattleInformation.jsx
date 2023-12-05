@@ -2,7 +2,7 @@ import React from 'react';
 import EnemyDetail from '../EnemyDetail/EnemyDetail';
 
 const BattleInformation = ({ battleInfo }) => (
-	<article>
+	<article className='container'>
 		{battleInfo.map(enemy =>
 			<EnemyDetail key={enemy.id} enemy={enemy} />
 		)}

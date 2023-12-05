@@ -2,10 +2,16 @@ import React from 'react';
 import Nav from "./Nav";
 
 const Header = () => (
-	<header className="bg-darkblue font-bold text-white text-7xl pl-3 py-3">
-		<h1 className='text-left pl-5 pt-3'>FE Info</h1>
-		<Nav />
+
+	<header className="bg-darkblue text-white text-7xl py-3">
+		<div className='flex justify-between pl-5'>
+			<h1 className='text-left font-bold '>FE Info</h1>
+			<Nav />
+		</div>
+
 	</header>
+
+
 );
 
 export default Header;
