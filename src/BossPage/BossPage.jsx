@@ -67,16 +67,18 @@ class BossPage extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<Dropdown
-					title="Battle"
-					items={this.state.battles}
-					onValueChanged={this.battleOnChanged}
-					defaultValue={0} />
-				<Dropdown
-					title="Location"
-					items={this.state.locations}
-					onValueChanged={this.locationOnChanged}
-					defaultValue={1} />
+				<div className=' container flex justify-between'>
+					<Dropdown
+						title="Battle"
+						items={this.state.battles}
+						onValueChanged={this.battleOnChanged}
+						defaultValue={0} />
+					<Dropdown
+						title="Location"
+						items={this.state.locations}
+						onValueChanged={this.locationOnChanged}
+						defaultValue={1} />
+					</div>
 				<BattleInformation battleInfo={this.state.bossStats} />
 			</React.Fragment>
 		)
