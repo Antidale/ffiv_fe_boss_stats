@@ -7,7 +7,7 @@ import Utils from '../Utils/Utils';
 
 const BossDetail = ({ enemy }) => (
 	<section >
-		<details className="container detail-container">
+		<details className="inline-flex flex-row justify-around flex-wrap self-auto">
 			<summary>
 				<span className="full-width Child title no-margin container">
 					<ItemTitle value={enemy.enemy} isTitle hideLabel />
