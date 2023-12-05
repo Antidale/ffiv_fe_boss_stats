@@ -68,12 +68,12 @@ class BossPage extends Component {
 		return (
 			<React.Fragment>
 				<Dropdown
-					title="Battles"
+					title="Battle"
 					items={this.state.battles}
 					onValueChanged={this.battleOnChanged}
 					defaultValue={0} />
 				<Dropdown
-					title="Locations"
+					title="Location"
 					items={this.state.locations}
 					onValueChanged={this.locationOnChanged}
 					defaultValue={1} />
