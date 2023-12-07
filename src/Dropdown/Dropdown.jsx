@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Dropdown.css';
 
 const Dropdown = ({ title, items, onValueChanged }) => (
 	<div className="inline-flex m-5 pb-10 pt-10">

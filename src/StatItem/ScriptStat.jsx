@@ -1,6 +1,4 @@
 import React from 'react';
-import './StatItem.css'
-import './ScriptStat.css'
 import PropTypes from "prop-types";
 
 const ScriptStat = ({ values }) => {
