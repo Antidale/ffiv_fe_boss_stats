@@ -1,9 +1,8 @@
 import React from 'react';
-import './StatItem.css';
 
 const ItemTitle = ({ value }) => (
-	<p className="stat-item">
-		<span className="item-title value">{value}</span>
+	<p className="font-semibold text-2xl align-bottom">
+		<span className="">{value}</span>
 	</p>
 )
 

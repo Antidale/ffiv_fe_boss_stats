@@ -3,7 +3,10 @@ import SummaryData from './SummaryData';
 import Utils from '../Utils/Utils';
 
 const LocationSummary = () => (
-  <table className='table-auto border-collapse text-2xl mx-auto'>
+  <table className='table-auto border-collapse text-2xl mx-auto mb-10'>
+    <caption className='caption-bottom pt-2'>
+      All stats listed are for single enemy fights.
+    </caption>
     <thead>
       <tr >
         <th rowSpan="2"></th>
