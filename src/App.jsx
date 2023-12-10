@@ -7,14 +7,14 @@ import EquipmentPage from './EquipmentPage/EquipmentPage';
 
 const App = () => (
   <BrowserRouter>
-      <Header />
-      <main>
-        <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/boss-stats/" element={<BossPage />} />
-          <Route path="/equipment/" element={<EquipmentPage />} />
-        </Routes>
-      </main>
+    <Header />
+    <main>
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/boss-stats/" element={<BossPage />} />
+        <Route path="/equipment/" element={<EquipmentPage />} />
+      </Routes>
+    </main >
   </BrowserRouter>
 );
 

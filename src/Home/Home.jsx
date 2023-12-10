@@ -2,7 +2,7 @@ import React from 'react';
 import LocationSummary from '../LocationSummaryPage/LocationSummary';
 
 const Home = () => (
-	<article className=' pt-5'>
+	<article className='pt-5'>
 		<LocationSummary />
 	</article>
 )
