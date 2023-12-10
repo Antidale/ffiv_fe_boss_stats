@@ -1,16 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './StatItem.css'
 
-const StatItem = ({ label, value, hoverText, isTitle, hideLabel }) => (
-	<p className="stat-item" title={hoverText}>
-		<span className={
-			"label " +
-			(isTitle ? "title " : " ") +
-			(hideLabel ? "hidden " : " ")}>
+const StatItem = ({ label, value, hoverText }) => (
+	<p className=" text-2xl text-gray-700 px-1 font-normal" title={hoverText}>
+		<span className=' text-xl'>
 			{label}:
-				</span>
-		<span className="value">
+		</span>
+		<span className=" pl-1">
 			{value}
 		</span>
 

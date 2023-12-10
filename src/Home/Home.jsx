@@ -1,9 +1,10 @@
 import React from 'react';
+import LocationSummary from '../LocationSummaryPage/LocationSummary';
 
 const Home = () => (
-	<div>
-		<p>Welcome to a site with some helpful gameplay information about Free Enterprise</p>
-	</div>
+	<article className='pt-5'>
+		<LocationSummary />
+	</article>
 )
 
 export default Home;

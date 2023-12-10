@@ -1,10 +1,9 @@
 import React from 'react';
-import './StatItem.css';
 
 const ItemTitle = ({ value }) => (
-	<p className="stat-item">
-		<span className="item-title value">{value}</span>
-	</p>
+	<h2 className="font-semibold text-4xl align-bottom pl-5">
+		<span className="">{value}</span>
+	</h2>
 )
 
 export default ItemTitle;

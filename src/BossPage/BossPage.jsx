@@ -66,19 +66,21 @@ class BossPage extends Component {
 
 	render() {
 		return (
-			<React.Fragment>
-				<Dropdown
-					title="Battles"
-					items={this.state.battles}
-					onValueChanged={this.battleOnChanged}
-					defaultValue={0} />
-				<Dropdown
-					title="Locations"
-					items={this.state.locations}
-					onValueChanged={this.locationOnChanged}
-					defaultValue={1} />
+			<article className='mx-auto'>
+				<section className='flex justify-center'>
+					<Dropdown
+						title="Battle"
+						items={this.state.battles}
+						onValueChanged={this.battleOnChanged}
+						defaultValue={0} />
+					<Dropdown
+						title="Location"
+						items={this.state.locations}
+						onValueChanged={this.locationOnChanged}
+						defaultValue={1} />
+				</section>
 				<BattleInformation battleInfo={this.state.bossStats} />
-			</React.Fragment>
+			</article>
 		)
 	}
 }
