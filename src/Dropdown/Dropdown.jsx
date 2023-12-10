@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Dropdown = ({ title, items, onValueChanged }) => (
-	<div className="inline-flex m-5 pb-10 pt-10">
-		<h2 className="pr-10 font-semibold text-2xl self-center">{title}</h2>
+	<div className="inline-flex m-5 py-5">
+		<h2 className="pr-2 font-semibold text-2xl self-center">{title}</h2>
 		<select onChange={onValueChanged} className=' pl-2 pt-1'>
 			{items.map(item =>
 				<option key={item.id} value={item.id}>{item.name}</option>

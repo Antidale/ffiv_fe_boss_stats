@@ -4,13 +4,10 @@ import PropTypes from "prop-types";
 const Note = ({ value }) => {
 	if (value) {
 		return (
-			<div className=''>
-				<h3 className=''>
-					<span>
-						Notes:
-					</span>
-				</h3>
-				{value}
+			<div className=' border-gray-300 border-t mt-2'>
+				{value.map((note, index) => <p key={index} className=' text-gray-700 whitespace-pre-wrap text-2xl font-normal pl-1'>{note}</p>
+				)}
+
 			</div>
 		)
 	}
@@ -19,7 +16,7 @@ const Note = ({ value }) => {
 }
 
 Note.propTypes = {
-	value: PropTypes.string
+	value: PropTypes.array
 }
 
 export default Note;

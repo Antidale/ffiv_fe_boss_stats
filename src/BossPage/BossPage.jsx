@@ -66,8 +66,8 @@ class BossPage extends Component {
 
 	render() {
 		return (
-			<React.Fragment>
-				<div className=' container flex justify-between'>
+			<article className='mx-auto'>
+				<section className='flex justify-center'>
 					<Dropdown
 						title="Battle"
 						items={this.state.battles}
@@ -78,9 +78,9 @@ class BossPage extends Component {
 						items={this.state.locations}
 						onValueChanged={this.locationOnChanged}
 						defaultValue={1} />
-					</div>
+				</section>
 				<BattleInformation battleInfo={this.state.bossStats} />
-			</React.Fragment>
+			</article>
 		)
 	}
 }

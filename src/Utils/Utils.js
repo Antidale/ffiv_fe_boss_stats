@@ -20,14 +20,7 @@ const calculateDamage = (enemy) => (
 )
 
 const formatAttack = (enemy) => (
-    Math.floor((
-        //base
-        enemy.attackPower * enemy.attackMultiplier * enemy.attackPercent / 100
-        +
-        // 1.5x possible multiplier
-        enemy.attackPower * enemy.attackMultiplier * enemy.attackPercent * 1.5 / 100)
-        //average them together
-        / 2)
+    `${enemy.attackPower}  ${enemy.attackMultiplier}x ${enemy.attackPercent}%`
 )
 
 const darkWaveMax = (enemy => (
