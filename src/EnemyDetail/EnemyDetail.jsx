@@ -6,7 +6,7 @@ import Utils from '../Utils/Utils';
 const BossDetail = ({ enemy }) => (
 	<section className=' mb-5 grid grid-cols-5'>
 		<div className=' w-2'></div>
-		<details className='border-darkblue border-2 rounded-lg col-span-3'>
+		<details className='border-darkblue border-2 rounded-lg col-span-3' open>
 			<summary className='bg-darkblue text-slate-200'>
 				<div className='grid grid-cols-4'>
 					<h2 className="font-semibold align-bottom text-4xl pl-3 col-span-2 pb-2">
