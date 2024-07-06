@@ -4,6 +4,9 @@
   "private": true,
   "homepage": "https://ff4-fe-info.rubrics-cubed.com/",
   "dependencies": {
+    "@vitejs/plugin-react": "^4.1.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
     "prop-types": "^15.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -27,7 +30,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-  }
+  ]
 }
