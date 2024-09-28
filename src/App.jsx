@@ -5,6 +5,7 @@ import Home from './Home/Home';
 import BossPage from './BossPage/BossPage';
 import EquipmentPage from './EquipmentPage/EquipmentPage';
 import TosPrivacy from './BotPages/TosPrivacy';
+import TournamentPage from './TournamentsPage/TournamentPage';
 
 const App = () => (
   <BrowserRouter>
@@ -15,6 +16,7 @@ const App = () => (
         <Route path="/boss-stats/" element={<BossPage />} />
         <Route path="/equipment/" element={<EquipmentPage />} />
         <Route path="/tos-privacy" element={<TosPrivacy />} />
+        <Route path="/tournaments/" element={<TournamentPage />} />
       </Routes>
     </main >
   </BrowserRouter>

@@ -25,6 +25,8 @@ class BossPage extends Component {
 	}
 
 	componentDidMount() {
+		document.title = 'Boss Stats'
+
 		Api.fetchData(
 			BATTLE_ENDPOINT,
 			data => this.setState({ battles: data })
