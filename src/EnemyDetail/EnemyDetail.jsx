@@ -4,8 +4,8 @@ import Note from '../StatItem/Note';
 import Utils from '../Utils/Utils';
 
 const BossDetail = ({ enemy }) => (
-	<section className=' mb-5 grid grid-cols-5'>
-		<div className=' w-2'></div>
+	<section className='mb-5 grid grid-cols-5'>
+		<div className='w-2'></div>
 		<details className='border-darkblue border-2 rounded-lg col-span-3' open>
 			<summary className='bg-darkblue text-slate-200'>
 				<div className='grid grid-cols-4'>
