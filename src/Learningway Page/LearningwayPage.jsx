@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTitle } from '../Effects/SetTitle';
+import YouTubeIframe from '../Utils/YouTube';
 
 const Learningway = () => {
     useTitle("Learningway")
@@ -47,21 +48,17 @@ const Learningway = () => {
             <section className='py-3'>
                 <h2 className='text-3xl text-center py-2 bg-darkblue text-white border-white rounded-lg border-2 max-w-3/4 mx-auto my-3 outline outline-black'>Instructional Videos</h2>
                 <ul className='list-none'>
-                    <li className='my-5'>
-                        <p className='text-xl'>Kmain Walkthrough</p>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/FiG22k-sD88?si=MfYZK20IjdVg-EnW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <li>
+                        <YouTubeIframe title="Kmain Walkthrough" url="https://www.youtube.com/embed/FiG22k-sD88?si=MfYZK20IjdVg-EnW" />
+                    </li>
+                    <li>
+                        <YouTubeIframe title="Ksummon Walkthrough" url="https://www.youtube.com/embed/DofNt0zSspA?si=IazstpXcVsQVMdU-" />
+                    </li>
+                    <li>
+                        <YouTubeIframe title="Kmoon Walkthrough" url="https://www.youtube.com/embed/FzXE2Xvj51A?si=WZ-WKf57iBPEwPOk" />
                     </li>
                     <li className='my-5'>
-                        <p className='text-xl'>Ksummon Walkthrough</p>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DofNt0zSspA?si=IazstpXcVsQVMdU-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </li>
-                    <li className='my-5'>
-                        <p className='text-xl'>Kmoon Walkthrough</p>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/FzXE2Xvj51A?si=WZ-WKf57iBPEwPOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </li>
-                    <li className='my-5'>
-                        <p className='text-xl'>Understanding Agility in Final Fantasy IV: Free Enterprise by tallgrant</p>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/cAbnhESM6N4?si=SMVMC-szr-VT5w59" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <YouTubeIframe title="Understanding Agility in Final Fantasy IV: Free Enterprise by tallgrant" url="https://www.youtube.com/embed/cAbnhESM6N4?si=SMVMC-szr-VT5w59" />
                     </li>
                 </ul>
             </section>
