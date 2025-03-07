@@ -2,6 +2,7 @@
 
 @theme {
   --color-darkblue: #04215b;
+  --color-seedbackground: #537b88;
 }
 
 /*
@@ -13,6 +14,7 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
+
   *,
   ::after,
   ::before,
@@ -27,10 +29,10 @@ code {
     monospace;
 }
 
-details > summary {
-	list-style: none;
+details>summary {
+  list-style: none;
 }
 
-  details > summary::-webkit-details-marker {
-	display: none;
+details>summary::-webkit-details-marker {
+  display: none;
 }

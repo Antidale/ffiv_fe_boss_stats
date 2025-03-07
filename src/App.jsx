@@ -6,6 +6,7 @@ import BossPage from './BossPage/BossPage';
 import EquipmentPage from './EquipmentPage/EquipmentPage';
 import TosPrivacy from './BotPages/TosPrivacy';
 import Learningway from './Learningway Page/LearningwayPage';
+import SeedOne from './Learningway Page/seed-one';
 
 const App = () => (
   <BrowserRouter>
@@ -17,6 +18,7 @@ const App = () => (
         <Route path="/equipment/" element={<EquipmentPage />} />
         <Route path="/learningway/" element={<Learningway />} />
         <Route path="/tos-privacy" element={<TosPrivacy />} />
+        <Route path="/learningway/seed-one" element={<SeedOne />} />
       </Routes>
     </main >
   </BrowserRouter>
