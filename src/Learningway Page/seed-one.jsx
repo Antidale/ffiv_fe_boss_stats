@@ -1,17 +1,30 @@
 import React from 'react';
 import { useTitle } from '../Effects/SetTitle';
+import Seeds from './LearningwaySeedSource';
+import { useParams } from 'react-router-dom';
 
-const SeedOne = () => {
-    useTitle("Learningway Seed One")
+const SeedIframe = (props) => {
 
+
+    const { seedName } = useParams();
+
+    var seedInfo = Seeds[seedName]
+
+    if (!seedInfo) {
+        useTitle("404");
+        return (
+            <article>Seed not found.</article>
+        )
+    }
+    useTitle(`Learningway: ${seedName}`);
     return (
-        <article className='mx-auto bg-seedbackground'>
+        <article className='mx-auto bg-seedbackground' >
             <iframe
                 className="min-w-full min-h-dvh pt-5 bg-seedbackground"
-                src="https://ff4-fe-info.s3.us-west-2.amazonaws.com/learningway-seeds/seed_one.html"
-                referrerpolicy="strict-origin-when-cross-origin" />
-        </article>
+                srcDoc={Seeds.SeedOne}
+                referrerPolicy="strict-origin-when-cross-origin" />
+        </article >
     )
 }
 
-export default SeedOne;
+export default SeedIframe;

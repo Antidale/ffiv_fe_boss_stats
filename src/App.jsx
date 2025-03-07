@@ -18,7 +18,7 @@ const App = () => (
         <Route path="/equipment/" element={<EquipmentPage />} />
         <Route path="/learningway/" element={<Learningway />} />
         <Route path="/tos-privacy" element={<TosPrivacy />} />
-        <Route path="/learningway/seed-one" element={<SeedOne />} />
+        <Route path="/learningway/:seedName" element={<SeedOne />} />
       </Routes>
     </main >
   </BrowserRouter>
