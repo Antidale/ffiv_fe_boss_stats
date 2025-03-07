@@ -66,11 +66,7 @@ const Learningway = () => {
                 </ul>
             </section>
         </article>
-
-
-
     )
 }
-
 
 export default Learningway;
