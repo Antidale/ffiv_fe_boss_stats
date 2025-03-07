@@ -757,7 +757,7 @@ const SeedOne = `<html>
 
 
 const Seeds = {
-    SeedOne: SeedOne
+    seedone: SeedOne
 }
 
 export default Seeds;
