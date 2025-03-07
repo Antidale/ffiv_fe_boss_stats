@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://ff4-fe-info.rubrics-cubed.com/",
+  "type": "module",
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.9",
     "@vitejs/plugin-react": "^4.1.1",
