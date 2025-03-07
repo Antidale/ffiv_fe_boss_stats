@@ -8,8 +8,8 @@ const SeedOne = () => {
         <article className='mx-auto bg-seedbackground'>
             <iframe
                 className="min-w-full min-h-dvh pt-5 bg-seedbackground"
-                src="/seeds/seed_one.html"
-                width="600" height="800" referrerpolicy="strict-origin-when-cross-origin" />
+                src="https://ff4-fe-info.s3.us-west-2.amazonaws.com/learningway-seeds/seed_one.html"
+                referrerpolicy="strict-origin-when-cross-origin" />
         </article>
     )
 }
