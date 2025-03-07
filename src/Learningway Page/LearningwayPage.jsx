@@ -1,8 +1,9 @@
 import React from 'react';
 import { useTitle } from '../Effects/SetTitle';
-import YouTubeIframe from '../Utils/YouTube';
+
 import VodLinks from './VodLinks';
 import LearninwayVods from './LearningwayVods'
+import InstructionalVideos from './InstructionalVideos';
 
 const Learningway = () => {
     useTitle("Learningway")
@@ -31,28 +32,12 @@ const Learningway = () => {
                 <br />
                 <code>O1:quest_forge/2:quest_magma/3:quest_tradepink/req:3/win:crystal Kmain Pshop Crelaxed/j:abilities Tempty Swild/free/no:apples Bstandard/whyburn Etoggle Glife/sylph/backrow -spoon</code>
 
-                <p className='pt-2'><a href="/learningway/seed-one" className='text-xl border-b-2 border-blue-600'>Get the seed</a></p>
+                <p className='pt-2'><a href="/learningway/SeedOne" className='text-xl border-b-2 border-blue-600'>Get the seed</a></p>
 
                 <VodLinks vodInfo={LearninwayVods.SeedOne} />
 
             </section>
-            <section className='py-3'>
-                <h2 className='text-3xl text-center py-2 bg-darkblue text-white border-white rounded-lg border-2 max-w-3/4 mx-auto my-3 outline outline-black shadow-lg'>Instructional Videos</h2>
-                <ul className='list-none'>
-                    <li>
-                        <YouTubeIframe title="Kmain Walkthrough" url="https://www.youtube.com/embed/FiG22k-sD88?si=MfYZK20IjdVg-EnW" />
-                    </li>
-                    <li>
-                        <YouTubeIframe title="Ksummon Walkthrough" url="https://www.youtube.com/embed/DofNt0zSspA?si=IazstpXcVsQVMdU-" />
-                    </li>
-                    <li>
-                        <YouTubeIframe title="Kmoon Walkthrough" url="https://www.youtube.com/embed/FzXE2Xvj51A?si=WZ-WKf57iBPEwPOk" />
-                    </li>
-                    <li>
-                        <YouTubeIframe title="Understanding Agility in Final Fantasy IV: Free Enterprise by tallgrant" url="https://www.youtube.com/embed/cAbnhESM6N4?si=SMVMC-szr-VT5w59" />
-                    </li>
-                </ul>
-            </section>
+            <InstructionalVideos />
         </article>
     )
 }
