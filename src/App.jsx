@@ -1,25 +1,28 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Header/Header';
-import Home from './Home/Home';
-import BossPage from './BossPage/BossPage';
-import EquipmentPage from './EquipmentPage/EquipmentPage';
-import TosPrivacy from './BotPages/TosPrivacy';
-import Learningway from './Learningway Page/LearningwayPage';
-import SeedIframe from './Learningway Page/SeedIframe';
+
+const Home = lazy(() => import('./Home/Home'));
+const BossPage = lazy(() => import('./BossPage/BossPage'));
+const EquipmentPage = lazy(() => import('./EquipmentPage/EquipmentPage'));
+const TosPrivacy = lazy(() => import('./BotPages/TosPrivacy'));
+const Learningway = lazy(() => import('./Learningway Page/LearningwayPage'));
+const SeedIframe = lazy(() => import('./Learningway Page/SeedIframe'));
 
 const App = () => (
   <BrowserRouter>
     <Header />
     <main>
-      <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/boss-stats/" element={<BossPage />} />
-        <Route path="/equipment/" element={<EquipmentPage />} />
-        <Route path="/learningway/" element={<Learningway />} />
-        <Route path="/tos-privacy" element={<TosPrivacy />} />
-        <Route path="/learningway/:seedName" element={<SeedIframe />} />
-      </Routes>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/boss-stats/" element={<BossPage />} />
+          <Route path="/equipment/" element={<EquipmentPage />} />
+          <Route path="/learningway/" element={<Learningway />} />
+          <Route path="/tos-privacy" element={<TosPrivacy />} />
+          <Route path="/learningway/:seedName" element={<SeedIframe />} />
+        </Routes>
+      </Suspense>
     </main >
   </BrowserRouter>
 );
