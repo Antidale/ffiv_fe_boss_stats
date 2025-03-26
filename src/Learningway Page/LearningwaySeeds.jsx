@@ -26,6 +26,28 @@ const LearningwaySeeds = () => {
             <p className='pt-2'><NavLink to="/learningway/seeds/seedone" className='text-xl border-b-2 border-blue-600'>Get the seed</NavLink></p>
 
             <VodLinks vodInfo={LearningwayVods.SeedOne} />
+
+            <h3 className='text-2xl text-center py-1 bg-darkblue text-white border-white rounded-lg border-2 max-w-5/8 mx-auto mt-7 mb-3 outline outline-black shadow-md'>
+                Seed Two - Somebunny goes to market
+            </h3>
+
+            <code>O1:quest_masamunealtar/random:7/req:6/win:crystal Kmain/summon/moon/force:magma Pshop Cstandard/nofree/j:abilities/nodupes Twild Swild Bstandard/alt:gauntlet/whyburn Etoggle Gwarp/life/sylph/backrow -kit:basic -noadamants -spoon</code>
+
+            <p className='pt-2'><NavLink to="/learningway/seeds/seedtwo" className='text-xl border-b-2 border-blue-600'>Get the seed</NavLink></p>
+
+            <h3 className='text-2xl text-center py-1 bg-darkblue text-white border-white rounded-lg border-2 max-w-5/8 mx-auto mt-7 mb-3 outline outline-black shadow-md'>
+                Seed Three - Somebunny gets a Hook
+            </h3>
+
+            <p>This flagset is a lot more focused than the two previous ones, and should run pretty quickly, but can have a lot of replayability and challenge. The only goal here is to get the Hook, take the Hovercraft to Eblan, and complete the Hook Route underground.</p>
+            <br />
+            <p>With all the character spots open, you should get a pretty decent selection for your party, but with <code>nodupes</code> enabled, you're limited to just one of anybody. Treasure is set to Twildish, so you have good things to find in boxes, but the quality will depend on what area you're hunting in. Check out the wiki's page <a href="https://wiki.ff4fe.com/doku.php?id=treasure_probability_curves_twildish" className='border-b-1 border-blue-600'>detailing Twildish information</a> for more information</p>
+            <br />
+            <code>O1:quest_falcon/req:all/win:game Kmain/force:hook Pnone Crelaxed/j:abilities/nodupes Twildish Sstandard Bstandard/alt:gauntlet Etoggle Glife/sylph/backrow -kit:basic -noadamants -spoon</code>
+
+            <p className='pt-2'><NavLink to="/learningway/seeds/seedthree" className='text-xl border-b-2 border-blue-600'>Get the seed</NavLink></p>
+
+            <p className='pt-2'><NavLink to="/learningway/seeds/seedthreechallenge" className='text-xl border-b-2 border-blue-600'>Get a bonus challenge seed</NavLink></p>
         </article>
     )
 }
