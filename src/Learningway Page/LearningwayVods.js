@@ -19,7 +19,7 @@ const SeedTwo = [
         "vodUrl": "https://www.youtube.com/watch?v=edE1gW46sfg"
     },
     {
-        "runnernName": "jbruntr",
+        "runnerName": "jbruntr",
         "vodUrl": "https://www.twitch.tv/videos/2418275871"
     }
 ]
