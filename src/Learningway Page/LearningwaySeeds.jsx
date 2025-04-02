@@ -8,7 +8,7 @@ const LearningwaySeeds = () => {
     useTitle("Learnignway Seeds")
 
     return (
-        <article className='mx-auto max-w-6/10'>
+        <article className='mx-auto max-w-6/10 pb-5'>
             <h2 className='text-3xl text-center py-2 bg-darkblue text-white border-white rounded-lg border-2 max-w-3/4 mx-auto my-3 outline outline-black shadow-lg'>Learningway Seeds</h2>
             <p>The Learningway seeds are intended to target the development of specific skills that are helpful for learning the game, and each seed will try to build on what's come before without being too overwhelming. Learningway seeds allow newbies to practice their skills, learn more from watching experts play the same seeds, and receive feedback on their runs.</p>
             <br />
@@ -39,6 +39,8 @@ const LearningwaySeeds = () => {
 
             <p className='pt-2'><NavLink to="/learningway/seeds/seedtwo" className='text-xl border-b-2 border-blue-600'>Get the seed</NavLink></p>
 
+            <VodLinks vodInfo={LearningwayVods.SeedTwo} />
+
             <h3 className='text-2xl text-center py-1 bg-darkblue text-white border-white rounded-lg border-2 max-w-5/8 mx-auto mt-7 mb-3 outline outline-black shadow-md'>
                 Seed Three - Somebunny gets a Hook
             </h3>
@@ -51,7 +53,10 @@ const LearningwaySeeds = () => {
 
             <p className='pt-2'><NavLink to="/learningway/seeds/seedthree" className='text-xl border-b-2 border-blue-600'>Get the seed</NavLink></p>
 
+            <VodLinks vodInfo={LearningwayVods.SeedThree} />
+
             <p className='pt-2'><NavLink to="/learningway/seeds/seedthreechallenge" className='text-xl border-b-2 border-blue-600'>Get a bonus challenge seed</NavLink></p>
+
         </article>
     )
 }
