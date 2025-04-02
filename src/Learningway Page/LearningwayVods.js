@@ -17,6 +17,10 @@ const SeedTwo = [
     {
         "runnerName": "tallgrant",
         "vodUrl": "https://www.youtube.com/watch?v=edE1gW46sfg"
+    },
+    {
+        "runnernName": "jbruntr",
+        "vodUrl": "https://www.twitch.tv/videos/2418275871"
     }
 ]
 
