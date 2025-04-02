@@ -28,7 +28,7 @@ const LearningwaySeeds = () => {
             <VodLinks vodInfo={LearningwayVods.SeedOne} />
 
             <h3 className='text-2xl text-center py-1 bg-darkblue text-white border-white rounded-lg border-2 max-w-5/8 mx-auto mt-7 mb-3 outline outline-black shadow-md'>
-                Seed Two - Somebunny goes to market
+                Seed Two - Somebunny makes choices
             </h3>
 
             <p>This flagset represents a small step up in beginner flags. High quality gear is still available, but you must either find it or pay for it. You must find ways to search effectively to get your team rolling. But you’ll have some security- all characters can be found somewhere in the seed.</p>
