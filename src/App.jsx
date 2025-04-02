@@ -8,7 +8,7 @@ const EquipmentPage = lazy(() => import('./EquipmentPage/EquipmentPage'));
 const TosPrivacy = lazy(() => import('./BotPages/TosPrivacy'));
 const Learningway = lazy(() => import('./Learningway Page/LearningwayPage'));
 const SeedIframe = lazy(() => import('./Learningway Page/SeedIframe'));
-const LearningwayVods = lazy(() => import('./Learningway Page/LearningwayVods'))
+const InstructionalVideos = lazy(() => import('./Learningway Page/InstructionalVideos'))
 const LearningwaySeeds = lazy(() => import('./Learningway Page/LearningwaySeeds'))
 
 const App = () => (
@@ -24,7 +24,7 @@ const App = () => (
           <Route path="/tos-privacy" element={<TosPrivacy />} />
           <Route path="/learningway/seeds/:seedName" element={<SeedIframe />} />
           <Route path="/learningway/seeds" element={<LearningwaySeeds />} />
-          <Route path="/learnignway/videos" element={<LearningwayVods />} />
+          <Route path="/learnignway/videos" element={<InstructionalVideos />} />
         </Routes>
       </Suspense>
     </main >
