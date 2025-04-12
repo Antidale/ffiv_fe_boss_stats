@@ -34,7 +34,7 @@ const LearningwaySeeds = () => {
             <p>This flagset represents a small step up in beginner flags. High quality gear is still available, but you must either find it or pay for it. You must find ways to search effectively to get your team rolling. But you’ll have some security- all characters can be found somewhere in the seed.</p>
             <br />
             <p>Your objectives are designed to take you everywhere, and in some cases into difficult situations. Six out of eight objectives may allow you to skip a difficult boss or a check gated by a buried key item.</p>
-
+            <br />
             <code>O1:quest_masamunealtar/random:7/req:6/win:crystal Kmain/summon/moon/force:magma Pshop Cstandard/nofree/j:abilities/nodupes Twild Swild Bstandard/alt:gauntlet/whyburn Etoggle Gwarp/life/sylph/backrow -kit:basic -noadamants -spoon</code>
 
             <p className='pt-2'><NavLink to="/learningway/seeds/seedtwo" className='text-xl border-b-2 border-blue-600'>Get the seed</NavLink></p>
