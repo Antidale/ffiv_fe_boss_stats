@@ -24,7 +24,7 @@ const App = () => (
           <Route path="/tos-privacy" element={<TosPrivacy />} />
           <Route path="/learningway/seeds/:seedName" element={<SeedIframe />} />
           <Route path="/learningway/seeds" element={<LearningwaySeeds />} />
-          <Route path="/learnignway/videos" element={<InstructionalVideos />} />
+          <Route path="/learningway/videos" element={<InstructionalVideos />} />
         </Routes>
       </Suspense>
     </main >

@@ -18,7 +18,7 @@ const Learningway = () => {
 
             <div className='flex justify-evenly mt-5'>
                 <NavLink className='text-xl bg-darkblue text-white border-white rounded-lg border-2 px-3 py-2 outline outline-black shadow-md' to="/learningway/seeds">Learningway Seeds</NavLink>
-                <NavLink className="text-xl bg-darkblue text-white border-white rounded-lg border-2 px-3 py-2 outline outline-black shadow-md" to="/learnignway/videos">Instructional Videos</NavLink>
+                <NavLink className="text-xl bg-darkblue text-white border-white rounded-lg border-2 px-3 py-2 outline outline-black shadow-md" to="/learningway/videos">Instructional Videos</NavLink>
             </div>
             <br />
             <p>Also be sure to check out the <a href="https://wiki.ff4fe.com" className='border-b-1 border-blue-600'>Free Enterprise Wiki</a>! The wiki has lots of pages and articles detailing both FE and the vanilla game, as well as lots of links to community made refernce compilations to help people learn.</p>
