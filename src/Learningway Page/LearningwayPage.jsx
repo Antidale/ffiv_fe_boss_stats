@@ -14,7 +14,7 @@ const Learningway = () => {
             <h1 className='text-4xl text-center p-3 bg-darkblue text-white border-white rounded-lg border-2 max-w-7/8 mx-auto my-3 outline outline-black shadow-lg'>Learningway</h1>
             <p>Learning Free Enterprise is often an exercise in "Let me explain! No, there is too much, let me sum up". With that in mind, this project is an ongoing effort with from newbies and veterans to help provide a little more guidance than has been generally available for people looking to pick up the game.</p>
             <br />
-            <p>The series is going have a collection static seeds hosted on this website, with accompanying links to videos of veterans talking about their thoughts as they progress through the seed, some walkthrough videos linked to on this page, and more to come as we figure out more of what's needed. If you have suggestions, join the <a href="https://discord.gg/AVeUqkb" className='border-b-1 border-blue-600'>FE Discord</a> and head over to the #newbies-corner channel.</p>
+            <p>The series is going have a collection of static seeds hosted on this website, with accompanying links to videos of veterans talking about their thoughts as they progress through the seed, some walkthrough videos linked to on this page, and more to come as we figure out more of what's needed. If you have suggestions, join the <a href="https://discord.gg/AVeUqkb" className='border-b-1 border-blue-600'>FE Discord</a> and head over to the #newbies-corner channel.</p>
 
             <div className='flex justify-evenly mt-5'>
                 <NavLink className='text-xl bg-darkblue text-white border-white rounded-lg border-2 px-3 py-2 outline outline-black shadow-md' to="/learningway/seeds">Learningway Seeds</NavLink>
