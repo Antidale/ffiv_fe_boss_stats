@@ -21,10 +21,10 @@ const App = () => (
           <Route path="/boss-stats/" element={<BossPage />} />
           <Route path="/equipment/" element={<EquipmentPage />} />
           <Route path="/learningway/" element={<Learningway />} />
-          <Route path="/tos-privacy" element={<TosPrivacy />} />
-          <Route path="/learningway/seeds/:seedName" element={<SeedIframe />} />
           <Route path="/learningway/seeds" element={<LearningwaySeeds />} />
+          <Route path="/learningway/seeds/:seedName" element={<SeedIframe />} />
           <Route path="/learningway/videos" element={<InstructionalVideos />} />
+          <Route path="/tos-privacy" element={<TosPrivacy />} />
         </Routes>
       </Suspense>
     </main >
