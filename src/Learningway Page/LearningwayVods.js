@@ -24,9 +24,28 @@ const SeedTwo = [
     }
 ]
 
+const SeedThree = [
+    {
+        "runnerName": "Antidale",
+        "vodUrl": "https://www.youtube.com/watch?v=gIhKWcPnWzs"
+    },
+    {
+        "runnerName": "tallgrant",
+        "vodUrl": "https://www.youtube.com/watch?v=1NJPZiZlmcg"
+    },
+]
+
+const SeedThreeChallenge = [
+    {
+        "runnerName": "Antidale",
+        "vodUrl": "https://www.youtube.com/watch?v=32vhml9PgTs"
+    }
+]
+
 const LearningwayVods = {
     "SeedOne": SeedOne,
-    "SeedTwo": SeedTwo
+    "SeedTwo": SeedTwo,
+    "SeedThree": SeedThree
 }
 
 export default LearningwayVods;
