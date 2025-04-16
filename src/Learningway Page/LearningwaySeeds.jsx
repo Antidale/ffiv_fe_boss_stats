@@ -47,7 +47,7 @@ const LearningwaySeeds = () => {
 
             <p>This flagset is a lot more focused than the two previous ones, and should run pretty quickly, but can have a lot of replayability and challenge. The only goal here is to get the Hook, take the Hovercraft to Eblan, and complete the Hook Route underground.</p>
             <br />
-            <p>With all the character spots open, you should get a pretty decent selection for your party, but with <code>nodupes</code> enabled, you're limited to just one of anybody. Treasure is set to Twildish, so you have good things to find in boxes, but the quality will depend on what area you're hunting in. Check out the wiki's page <a href="https://wiki.ff4fe.com/doku.php?id=treasure_probability_curves_twildish" className='border-b-1 border-blue-600'>detailing Twildish information</a> for more information</p>
+            <p>With all the character spots open, you should get a pretty decent selection for your party, but with <code>nodupes</code> enabled, you're limited to just one of anybody. Treasure is set to Twildish, so you have good things to find in boxes, but the quality will depend on what area you're hunting in. Check out the wiki's page <a href="https://wiki.ff4fe.com/doku.php?id=treasure_probability_curves_twildish" className='border-b-1 border-blue-600'>detailing Twildish information</a> for more information.</p>
             <br />
             <code>O1:quest_falcon/req:all/win:game Kmain/force:hook Pnone Crelaxed/j:abilities/nodupes Twildish Sstandard Bstandard/alt:gauntlet Etoggle Glife/sylph/backrow -kit:basic -noadamants -spoon</code>
 
