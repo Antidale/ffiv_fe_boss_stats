@@ -5,7 +5,7 @@ import LearningwayVods from './LearningwayVods'
 import { NavLink } from 'react-router-dom';
 
 const LearningwaySeeds = () => {
-    useTitle("Learnignway Seeds")
+    useTitle("Learningway Seeds")
 
     return (
         <article className='mx-auto max-w-6/10 pb-5'>
