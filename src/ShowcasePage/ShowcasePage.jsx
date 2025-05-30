@@ -13,7 +13,7 @@ const Showcase = () => {
             </p>
             <p className='border-black border-2 p-2 mx-5 font-mono flex-auto'>
                 <div className='p-2'>
-                    OArandom:4,tough_quest/do_2:spoon/do_4:superweapon OBrandom:4,char/do_2:ribbon/do_4:adamantarmor OC1:collect_boss13/2:boss_wyvern/random:3,boss/do_3:siren/do_5:cursedring ODgroup_a:all/group_b:all/group_c:all/do_2:crystal Kmain/summon/moon/miab:lst/char/nofree Pkey Cstandard/nofree/nogiant/distinct:8/start:any/j:abilities/nekkie/nodupes/hero Tpro/playable Sstandard/playable/no:sirens Bchaos/risky/alt:gauntlet/chaosburn Etoggle Xobjbonus:5 Gwarp/life/sylph/backrow Qfastrom/msgspeedfix <nobr>-kit:better</nobr> <nobr>-kit2:green</nobr> <nobr>-noadamants</nobr> <nobr>-nocursed</nobr> <nobr>-smith:alt,playable</nobr>
+                    <b>OA</b>random:4,tough_quest/do_2:spoon<wbr />/do_4:superweapon <b>OB</b>random:4,char<wbr />/do_2:ribbon/do_4:adamantarmor <b>OC</b>1:collect_boss13/2:boss_wyvern/random:3,boss<wbr />/do_3:siren/do_5:cursedring <b>OD</b>group_a:all/group_b:all/group_c:all<wbr />/do_2:crystal Kmain/summon/moon/miab:lst/char/nofree Pkey Cstandard/nofree/nogiant/distinct:8/start:any<wbr />/j:abilities/nekkie/nodupes/hero <nobr>Tpro/playable</nobr> <nobr>Sstandard/playable/no:sirens</nobr> <nobr>Bchaos/risky/alt:gauntlet<wbr />/chaosburn</nobr> Etoggle Xobjbonus:5 Gwarp/life/sylph/backrow Qfastrom/msgspeedfix <nobr>-kit:better</nobr> <nobr>-kit2:green</nobr> <nobr>-noadamants</nobr> <nobr>-nocursed</nobr> <nobr>-smith:alt,playable</nobr>
                 </div>
             </p>
             <br />
@@ -30,22 +30,22 @@ const Showcase = () => {
                 <div className='p-2'>
                     <p>Group A - Tough Quests</p>
                     <p className='font-mono pb-2'>
-                        OArandom:4,tough_quest/do_2:spoon/do_4:superweapon
+                        OArandom:4,tough_quest/<wbr />do_2:spoon/do_4:superweapon
                     </p>
 
                     <p>Group B - Characters</p>
                     <p className='font-mono pb-2'>
-                        OBrandom:4,char/do_2:ribbon/do_4:adamantarmor
+                        OBrandom:4,char/do_2:ribbon/<wbr />do_4:adamantarmor
                     </p>
 
                     <p>Group C - Bosses</p>
                     <p className='font-mono pb-2'>
-                        OC1:collect_boss13/2:boss_wyvern/random:3,boss/do_3:siren/do_5:cursedring
+                        OC1:collect_boss13/2:boss_wyvern/random:3,boss/<wbr />do_3:siren/do_5:cursedring
                     </p>
 
                     <p>Group D - How to win</p>
                     <p className='font-mono pb-2'>
-                        ODgroup_a:all/group_b:all/group_c:all/do_2:crystal
+                        ODgroup_a:all/group_b:all/group_c:all<wbr />/do_2:crystal
                     </p>
                 </div>
             </p>
@@ -80,7 +80,7 @@ const Showcase = () => {
             </p>
             <p className='border-black border-2 p-2 mx-5 flex-auto'>
                 <div className='p-2 font-mono'>
-                    Cstandard/nofree/nogiant/distinct:8/start:any/j:abilities/nekkie/nodupes/hero Tpro/playable Sstandard/playable/no:sirens
+                    Cstandard/<wbr />nofree/<wbr />nogiant/<wbr />distinct:8/<wbr />start:any/<wbr />j:abilities/<wbr />nekkie/<wbr />nodupes/<wbr />hero <nobr>Tpro/playable</nobr> <nobr>Sstandard/playable/no:sirens</nobr>
                 </div>
             </p>
 
