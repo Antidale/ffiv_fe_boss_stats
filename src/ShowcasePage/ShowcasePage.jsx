@@ -13,7 +13,7 @@ const Showcase = () => {
             </p>
             <p className='border-black border-2 p-2 mx-5 font-mono flex-auto'>
                 <div className='p-2'>
-                    OArandom:4,tough_quest/do_2:spoon/do_4:superweapon OBrandom:4,char/do_2:ribbon/do_4:adamantarmor OC1:collect_boss10/2:boss_wyvern/random:3,boss/do_3:siren/do_5:cursedring ODgroup_a:all/group_b:all/group_c:all/do_2:crystal Kmain/summon/moon/miab:lst/char/nofree Pkey Cstandard/nofree/nogiant/distinct:8/start:any/j:abilities/nekkie/nodupes/hero Tpro/playable Sstandard/playable/no:sirens Bchaos/risky/alt:gauntlet/chaosburn Etoggle Xobjbonus:5 Gwarp/life/sylph/backrow Qfastrom/msgspeedfix <nobr>-kit:better</nobr> <nobr>-kit2:green</nobr> <nobr>-noadamants</nobr> <nobr>-nocursed</nobr> <nobr>-smith:alt,playable</nobr>
+                    OArandom:4,tough_quest/do_2:spoon/do_4:superweapon OBrandom:4,char/do_2:ribbon/do_4:adamantarmor OC1:collect_boss13/2:boss_wyvern/random:3,boss/do_3:siren/do_5:cursedring ODgroup_a:all/group_b:all/group_c:all/do_2:crystal Kmain/summon/moon/miab:lst/char/nofree Pkey Cstandard/nofree/nogiant/distinct:8/start:any/j:abilities/nekkie/nodupes/hero Tpro/playable Sstandard/playable/no:sirens Bchaos/risky/alt:gauntlet/chaosburn Etoggle Xobjbonus:5 Gwarp/life/sylph/backrow Qfastrom/msgspeedfix <nobr>-kit:better</nobr> <nobr>-kit2:green</nobr> <nobr>-noadamants</nobr> <nobr>-nocursed</nobr> <nobr>-smith:alt,playable</nobr>
                 </div>
             </p>
             <br />
@@ -24,7 +24,7 @@ const Showcase = () => {
                 The Objective system got a huge overhaul in 5.0, and gives flagset designers a lot more opportunity to craft some story back into the game, offer specific rewards for completing objectives, or even provide a way to both <b>win:game</b> and <b>win:crystal</b>.
                 <br />
                 <br />
-                For this flagset, getting the Crystal requires doing all of groups A, B, and C. The runners will get some rewards as they complete objetives within those groups, as well.
+                For this flagset, getting the Crystal requires completing the entirety of two groups out of gropus A, B, and C. Which means that one of the three sets won't be required in order to get the Crystal. The runners will get some rewards as they complete objetives within those groups, as well.
             </p>
             <p className='border-black border-2 p-2 mx-5 flex-auto'>
                 <div className='p-2'>
@@ -40,7 +40,7 @@ const Showcase = () => {
 
                     <p>Group C - Bosses</p>
                     <p className='font-mono pb-2'>
-                        OC1:collect_boss10/2:boss_wyvern/random:3,boss/do_3:siren/do_5:cursedring
+                        OC1:collect_boss13/2:boss_wyvern/random:3,boss/do_3:siren/do_5:cursedring
                     </p>
 
                     <p>Group D - How to win</p>
