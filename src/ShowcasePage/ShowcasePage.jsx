@@ -24,7 +24,7 @@ const Showcase = () => {
                 The Objective system got a huge overhaul in 5.0, and gives flagset designers a lot more opportunity to craft some story back into the game, offer specific rewards for completing objectives, or even provide a way to both <b>win:game</b> and <b>win:crystal</b>.
                 <br />
                 <br />
-                For this flagset, getting the Crystal requires doing all of groups A, B, and C. The runners will get some rewards as they complete objetives within those groups, as well.
+                For this flagset, getting the Crystal requires completing the entirety of two groups out of gropus A, B, and C. Which means that one of the three sets won't be required in order to get the Crystal. The runners will get some rewards as they complete objetives within those groups, as well.
             </p>
             <p className='border-black border-2 p-2 mx-5 flex-auto'>
                 <div className='p-2'>
