@@ -21,7 +21,7 @@ const Showcase = () => {
                 Objectives
             </h2>
             <p className='pb-3'>
-                The Objective system got a huge overhaul in 5.0, and gives flagset designers a lot more opportunity to craft some story back into the game, offer specific rewards for completing objectives, or even provide a way to win:game and win:crystal.
+                The Objective system got a huge overhaul in 5.0, and gives flagset designers a lot more opportunity to craft some story back into the game, offer specific rewards for completing objectives, or even provide a way to both <b>win:game</b> and <b>win:crystal</b>.
                 <br />
                 <br />
                 For this flagset, getting the Crystal requires doing all of groups A, B, and C. The runners will get some rewards as they complete objetives within those groups, as well.
@@ -56,10 +56,10 @@ const Showcase = () => {
                 Key Items got a few things, and one important thing to note is that the Pass is <b>always</b> a Key Item, no matter where you get it from. 18/18 makes a comeback!
                 <br />
                 <br />
-                The new K flags in this flagset are Kchar and Kmiab:lst. For the MIABs, the granularity options that ScytheMarshall pioneered in the forks gets picked up, but there's a slight change in how the actual count of locations that get into the KI pool is determined. For this flagset, that change isn't really in play, so we'll defer explanining that for when the wiki is updated.
+                The new K flags in this flagset are <b>Kchar</b> and <b>Kmiab:lst</b>. For the MIABs, the granularity options that ScytheMarshall pioneered in the forks gets picked up, but there's a slight change in how the actual count of locations that get into the KI pool is determined. For this flagset, that change isn't really in play, so we'll defer explanining that for when the wiki is updated.
                 <br />
                 <br />
-                With Kchar flag enabled, Character locations will be shuffled into the Key Item location pool and Characters will be shuffled into the Key Item pool. This opens up a number of possibilities and can seriously affect your routing decisions during a seed. Zot can have 3 characters, 3 key items, 3 duds, or a mixture of them all.
+                With <b>Kchar</b> flag enabled, Character locations will be shuffled into the Key Item location pool and Characters will be shuffled into the Key Item pool. This opens up a number of possibilities and can seriously affect your routing decisions during a seed. Zot can have 3 characters, 3 key items, 3 duds, or a mixture of them all.
                 <br />
                 <br />
                 To help runners make good choices around whether or not to go through with the Package check, overworld sprites for character locations have been updated so you can get an idea for what that location has before receiving it. If it's a red treasure chest, it's a piece of treasure. If the chest is blue though, that's a key item!
@@ -74,7 +74,7 @@ const Showcase = () => {
                 Characters, Treasures, and Shops
             </h2>
             <p className="pb-3">
-                For this flagset, not much changes with the Character flags, just adding in the <b>nogiant</b> flag, which lets you mimic the Omode:classicgiant behavior of removing the character reward from defeating the CPU spot boss.
+                For this flagset, not much changes with the Character flags, just adding in the <b>nogiant</b> flag, which lets you mimic the old Omode:classicgiant behavior of removing the character reward from defeating the CPU spot boss.
                 <br />
                 <br />
                 5.0 does pick up the <b>playable</b> flag from the forks, but has a slightly different implementation. Here, things Edge can Dart <i>are</i> included in the Treasure and Shops pools, and summon orbs only appear if Rydia is in the seed.
@@ -90,10 +90,10 @@ const Showcase = () => {
                 The Rest
             </h2>
             <p className="pb-3">
-                <b>Bchaos/chaosburn</b> and <b>Qfastrom</b> are the standouts here. The boss scaling code has been reworked and we can now have multiples of any boss in a seed. Your dreams of many Alt. Gauntlets on the moon are now a possibility! You can also, with chaosburn, get a different whichburn effect on each Wyvern you fight. Neat! Scary! Fastrom speeds up the game a noticeable amount. Things are a little more challenging on BS1 than they were before, but also the fights just flow much more nicely.
+                <b>Bchaos/chaosburn</b> and <b>Qfastrom</b> are the standouts here. The boss scaling code has been reworked and we can now have multiples of any boss in a seed. Your dreams of many Alt. Gauntlets on the moon are now a possibility! You can also, with <b>chaosburn</b>, get a different <b>whichburn</b> effect on each Wyvern you fight. Neat! Scary! <b>Fastrom</b> speeds up the game a noticeable amount. Things are a little more challenging on BS1 than they were before, but also the fights just flow much more nicely.
                 <br />
                 <br />
-                -smith:playable gives the same "A character in the seed can use it" treatment to what Kokkol forges. Xobjbonus:5 will give the runners an extra 5% XP for each objective they complete. And you might notice that the Objective rewards include an Adamant amor and a Cursed ring, but here those items are not allowed. Objective rewards can include things that are otherwise not available, which includes a character that's otherwise not allowed in the seed.
+                <b>-smith:playable</b> gives the same "A character in the seed can use it" treatment to what Kokkol forges. <b>Xobjbonus:5</b> will give the runners an extra 5% XP for each objective they complete. And you might notice that the Objective rewards include an Adamant amor and a Cursed ring, but here those items are not allowed. Objective rewards can include things that are otherwise not available, which includes a character that's otherwise not allowed in the seed.
 
             </p>
             <p className='border-black border-2 p-2 mx-5 flex-auto'>
