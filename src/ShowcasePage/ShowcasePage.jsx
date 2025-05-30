@@ -13,7 +13,7 @@ const Showcase = () => {
             </p>
             <p className='border-black border-2 p-2 mx-5 font-mono flex-auto'>
                 <div className='p-2'>
-                    OArandom:4,tough_quest/do_2:spoon/do_4:superweapon OBrandom:4,char/do_2:ribbon/do_4:adamantarmor OC1:collect_boss10/2:boss_wyvern/random:3,boss/do_3:siren/do_5:cursedring ODgroup_a:all/group_b:all/group_c:all/do_2:crystal Kmain/summon/moon/miab:lst/char/nofree Pkey Cstandard/nofree/nogiant/distinct:8/start:any/j:abilities/nekkie/nodupes/hero Tpro/playable Sstandard/playable/no:sirens Bchaos/risky/alt:gauntlet/chaosburn Etoggle Xobjbonus:5 Gwarp/life/sylph/backrow Qfastrom/msgspeedfix <nobr>-kit:better</nobr> <nobr>-kit2:green</nobr> <nobr>-noadamants</nobr> <nobr>-nocursed</nobr> <nobr>-smith:alt,playable</nobr>
+                    OArandom:4,tough_quest/do_2:spoon/do_4:superweapon OBrandom:4,char/do_2:ribbon/do_4:adamantarmor OC1:collect_boss13/2:boss_wyvern/random:3,boss/do_3:siren/do_5:cursedring ODgroup_a:all/group_b:all/group_c:all/do_2:crystal Kmain/summon/moon/miab:lst/char/nofree Pkey Cstandard/nofree/nogiant/distinct:8/start:any/j:abilities/nekkie/nodupes/hero Tpro/playable Sstandard/playable/no:sirens Bchaos/risky/alt:gauntlet/chaosburn Etoggle Xobjbonus:5 Gwarp/life/sylph/backrow Qfastrom/msgspeedfix <nobr>-kit:better</nobr> <nobr>-kit2:green</nobr> <nobr>-noadamants</nobr> <nobr>-nocursed</nobr> <nobr>-smith:alt,playable</nobr>
                 </div>
             </p>
             <br />
@@ -40,7 +40,7 @@ const Showcase = () => {
 
                     <p>Group C - Bosses</p>
                     <p className='font-mono pb-2'>
-                        OC1:collect_boss10/2:boss_wyvern/random:3,boss/do_3:siren/do_5:cursedring
+                        OC1:collect_boss13/2:boss_wyvern/random:3,boss/do_3:siren/do_5:cursedring
                     </p>
 
                     <p>Group D - How to win</p>
