@@ -8,14 +8,14 @@ const Showcase = () => {
             </h1>
             <p>
                 There's a lot new in 5.0, and you should really look at the <a href="https://discord.com/channels/411615349579186178/1370845709544456295" className='border-b-2 border-blue-600'>randomizer-updates</a> channel in the Free Enterprise Workshop for a rundown of the changes, but here's both the flagset and a very quick summary of the changes.
-                <br />
-                <p className='mb-3'>Here's the whole flagset:</p>
             </p>
-            <p className='border-black border-2 p-2 mx-5 font-mono flex-auto'>
-                <div className='p-2'>
+            <br />
+            <p className='mb-3'>Here's the whole flagset:</p>
+            <div className='border-black border-2 p-2 mx-5 font-mono flex-auto'>
+                <p className='p-2'>
                     <b>OA</b>random:4,tough_quest/do_2:spoon<wbr />/do_4:superweapon <b>OB</b>random:4,char<wbr />/do_2:ribbon/do_4:adamantarmor <b>OC</b>1:collect_boss13/2:boss_wyvern/random:3,boss<wbr />/do_3:siren/do_5:cursedring <b>OD</b>group_a:all/group_b:all/group_c:all<wbr />/do_2:crystal Kmain/summon/moon/miab:lst/char/nofree Pkey Cstandard/nofree/nogiant/distinct:8/start:any<wbr />/j:abilities/nekkie/nodupes/hero <nobr>Tpro/playable</nobr> <nobr>Sstandard/playable/no:sirens</nobr> <nobr>Bchaos/risky/alt:gauntlet<wbr />/chaosburn</nobr> Etoggle Xobjbonus:5 Gwarp/life/sylph/backrow Qfastrom/msgspeedfix <nobr>-kit:better</nobr> <nobr>-kit2:green</nobr> <nobr>-noadamants</nobr> <nobr>-nocursed</nobr> <nobr>-smith:alt,playable</nobr>
-                </div>
-            </p>
+                </p>
+            </div>
             <br />
             <h2 className='text-2xl text-center p-3 bg-darkblue text-white border-white rounded-lg border-2 max-w-3/4 mx-auto my-3 outline outline-black shadow-lg'>
                 Objectives
@@ -26,7 +26,7 @@ const Showcase = () => {
                 <br />
                 For this flagset, getting the Crystal requires completing the entirety of two groups out of gropus A, B, and C. Which means that one of the three sets won't be required in order to get the Crystal. The runners will get some rewards as they complete objetives within those groups, as well.
             </p>
-            <p className='border-black border-2 p-2 mx-5 flex-auto'>
+            <div className='border-black border-2 p-2 mx-5 flex-auto'>
                 <div className='p-2'>
                     <p>Group A - Tough Quests</p>
                     <p className='font-mono pb-2'>
@@ -48,7 +48,7 @@ const Showcase = () => {
                         ODgroup_a:all/group_b:all/group_c:all<wbr />/do_2:crystal
                     </p>
                 </div>
-            </p>
+            </div>
             <h2 className='text-2xl text-center p-3 bg-darkblue text-white border-white rounded-lg border-2 max-w-3/4 mx-auto my-3 outline outline-black shadow-lg mt-6'>
                 Key Items
             </h2>
@@ -64,11 +64,11 @@ const Showcase = () => {
                 <br />
                 To help runners make good choices around whether or not to go through with the Package check, overworld sprites for character locations have been updated so you can get an idea for what that location has before receiving it. If it's a red treasure chest, it's a piece of treasure. If the chest is blue though, that's a key item!
             </p>
-            <p className='border-black border-2 p-2 mx-5 flex-auto'>
-                <div className='p-2 font-mono'>
+            <div className='border-black border-2 p-2 mx-5 flex-auto'>
+                <p className='p-2 font-mono'>
                     Kmain/summon/moon/miab:lst/char/nofree Pkey
-                </div>
-            </p>
+                </p>
+            </div>
             <h2 className='text-2xl text-center p-3 bg-darkblue text-white border-white rounded-lg border-2 max-w-3/4 mx-auto my-3 outline outline-black shadow-lg mt-6'>
                 Characters, Treasures, and Shops
             </h2>
@@ -78,11 +78,11 @@ const Showcase = () => {
                 <br />
                 5.0 does pick up the <b>playable</b> flag from the forks, but has a slightly different implementation. Here, things Edge can Dart <i>are</i> included in the Treasure and Shops pools, and summon orbs only appear if Rydia is in the seed.
             </p>
-            <p className='border-black border-2 p-2 mx-5 flex-auto'>
-                <div className='p-2 font-mono'>
+            <div className='border-black border-2 p-2 mx-5 flex-auto'>
+                <p className='p-2 font-mono'>
                     Cstandard/<wbr />nofree/<wbr />nogiant/<wbr />distinct:8/<wbr />start:any/<wbr />j:abilities/<wbr />nekkie/<wbr />nodupes/<wbr />hero <nobr>Tpro/playable</nobr> <nobr>Sstandard/playable/no:sirens</nobr>
-                </div>
-            </p>
+                </p>
+            </div>
 
             {/* the rest */}
             <h2 className='text-2xl text-center p-3 bg-darkblue text-white border-white rounded-lg border-2 max-w-3/4 mx-auto my-3 outline outline-black shadow-lg mt-6'>
@@ -95,11 +95,11 @@ const Showcase = () => {
                 <b>-smith:playable</b> gives the same "A character in the seed can use it" treatment to what Kokkol forges. <b>Xobjbonus:5</b> will give the runners an extra 5% XP for each objective they complete. And you might notice that the Objective rewards include an Adamant amor and a Cursed ring, but here those items are not allowed. Objective rewards can include things that are otherwise not available, which includes a character that's otherwise not allowed in the seed.
 
             </p>
-            <p className='border-black border-2 p-2 mx-5 flex-auto'>
-                <div className='p-2 font-mono'>
+            <div className='border-black border-2 p-2 mx-5 flex-auto'>
+                <p className='p-2 font-mono'>
                     Bchaos/risky/alt:gauntlet/chaosburn Etoggle Xobjbonus:5 Gwarp/life/sylph/backrow Qfastrom/msgspeedfix -kit:better -kit2:green -noadamants -nocursed -smith:alt,playable
-                </div>
-            </p>
+                </p>
+            </div>
         </article>
     )
 }
