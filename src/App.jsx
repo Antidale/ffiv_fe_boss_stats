@@ -10,6 +10,7 @@ const Learningway = lazy(() => import('./Learningway Page/LearningwayPage'));
 const SeedIframe = lazy(() => import('./Learningway Page/SeedIframe'));
 const InstructionalVideos = lazy(() => import('./Learningway Page/InstructionalVideos'))
 const LearningwaySeeds = lazy(() => import('./Learningway Page/LearningwaySeeds'))
+const Showcase = lazy(() => import('./ShowcasePage/ShowcasePage'))
 
 const App = () => (
   <BrowserRouter>
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/learningway/seeds/:seedName" element={<SeedIframe />} />
           <Route path="/learningway/seeds" element={<LearningwaySeeds />} />
           <Route path="/learningway/videos" element={<InstructionalVideos />} />
+          <Route path="/Showcase" element={<Showcase />} />
         </Routes>
       </Suspense>
     </main >
