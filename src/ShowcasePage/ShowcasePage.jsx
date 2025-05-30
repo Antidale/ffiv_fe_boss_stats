@@ -69,7 +69,6 @@ const Showcase = () => {
                     Kmain/summon/moon/miab:lst/char/nofree Pkey
                 </div>
             </p>
-            \
             <h2 className='text-2xl text-center p-3 bg-darkblue text-white border-white rounded-lg border-2 max-w-3/4 mx-auto my-3 outline outline-black shadow-lg mt-6'>
                 Characters, Treasures, and Shops
             </h2>
