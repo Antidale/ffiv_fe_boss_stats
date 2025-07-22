@@ -2990,7 +2990,6 @@ const SeedThreeChallenge = `<html>
 
 </html>`
 
-
 const Seeds = {
     seedone: SeedOne,
     seedtwo: SeedTwo,

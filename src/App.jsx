@@ -11,6 +11,7 @@ const SeedIframe = lazy(() => import('./Learningway Page/SeedIframe'));
 const InstructionalVideos = lazy(() => import('./Learningway Page/InstructionalVideos'))
 const LearningwaySeeds = lazy(() => import('./Learningway Page/LearningwaySeeds'))
 const Showcase = lazy(() => import('./ShowcasePage/ShowcasePage'))
+const SotwIframe = lazy(() => import('./SOTW/SotwIframe'))
 
 const App = () => (
   <BrowserRouter>
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/tos-privacy" element={<TosPrivacy />} />
           <Route path="/learningway/seeds/:seedName" element={<SeedIframe />} />
           <Route path="/learningway/seeds" element={<LearningwaySeeds />} />
+          <Route path="/sotw/seeds/:seedName" element={<SotwIframe />} />
           <Route path="/learningway/videos" element={<InstructionalVideos />} />
           <Route path="/Showcase" element={<Showcase />} />
         </Routes>
