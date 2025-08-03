@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Header/Header';
+import RaceSeedIframe from './RaceSeed/RaceSeedIframe';
 
 const Home = lazy(() => import('./Home/Home'));
 const BossPage = lazy(() => import('./BossPage/BossPage'));
@@ -12,6 +13,7 @@ const InstructionalVideos = lazy(() => import('./Learningway Page/InstructionalV
 const LearningwaySeeds = lazy(() => import('./Learningway Page/LearningwaySeeds'))
 const Showcase = lazy(() => import('./ShowcasePage/ShowcasePage'))
 const SotwIframe = lazy(() => import('./SOTW/SotwIframe'))
+const RaceSeedIfram = lazy(() => import('./RaceSeed/RaceSeedIframe'))
 
 const App = () => (
   <BrowserRouter>
@@ -27,6 +29,7 @@ const App = () => (
           <Route path="/learningway/seeds/:seedName" element={<SeedIframe />} />
           <Route path="/learningway/seeds" element={<LearningwaySeeds />} />
           <Route path="/sotw/seeds/:seedName" element={<SotwIframe />} />
+          <Route path="/race-seed/:seedName" element={<RaceSeedIframe />} />
           <Route path="/learningway/videos" element={<InstructionalVideos />} />
           <Route path="/Showcase" element={<Showcase />} />
         </Routes>
