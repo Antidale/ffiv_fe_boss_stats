@@ -6,9 +6,9 @@ const LocationSummary = () => (
 
   <table className='border-collapse text-xl mx-auto mb-10'>
     <caption className='caption-bottom pt-2'>
-      All stats listed use Bahamut's stats. Individual enemies in multi-enemy fights will have different values. 
+      All stats listed use Bahamut's stats. Individual enemies in multi-enemy fights will have different values.
     </caption>
-    <thead>
+    <thead className='sticky top-26 bg-gray-200 '>
       <tr>
         <th rowSpan="2" className=''></th>
         <th rowSpan="2" className='text-center align-bottom px-2'>HP</th>
