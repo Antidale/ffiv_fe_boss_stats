@@ -1,6 +1,8 @@
 const tempSeed = `<html>
     <head>
         <title>FF4FE: O1:quest_forge/2:quest_magma/3:quest_tradepink/req:3/win:crystal Kmain Pshop Crelaxed/j:abilities Tempty Swild/free/no:apples Bstandard/whyburn Etoggle Glife/sylph/backrow -spoon / UOVRJLFC1Y</title>
+        <link rel="stylesheet" href="https://info.tellah.life/seeds/seed.css">
+        <link rel="shortcut icon" href="https://info.tellah.life/favicon.ico">
     </head>
 
     <body>
@@ -19,7 +21,10 @@ const tempSeed = `<html>
                 <div class="label">Check:</div>
                 <div>
                     <div id="checksum-container">
-                        star mini claw sword
+                        <img class="checksum-tile" src="https://info.tellah.life/img/checksum-star.png" alt="$star" title="$star">
+                        <img class="checksum-tile" src="https://info.tellah.life/img/checksum-mini.png" alt="$mini" title="$mini">
+                        <img class="checksum-tile" src="https://info.tellah.life/img/checksum-claw.png" alt="$claw" title="$claw">
+                        <img class="checksum-tile" src="https://info.tellah.life/img/checksum-sword.png" alt="$sword" title="$sword">
                     </div>
                 </div>
             </div>
