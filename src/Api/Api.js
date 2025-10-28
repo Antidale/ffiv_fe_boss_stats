@@ -10,7 +10,7 @@ const Api = {
 		fetch(import.meta.env.VITE_API_URL + endpoint, paramsObject)
 			.then(response => {
 				if (response.ok)
-					response.text()
+					return response.text()
 				else
 					return null
 			})
