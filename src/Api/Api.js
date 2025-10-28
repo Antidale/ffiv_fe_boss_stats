@@ -8,7 +8,12 @@ const Api = {
 
 	fetchHtml: function (endpoint, stateFunction, paramsObject) {
 		fetch(import.meta.env.VITE_API_URL + endpoint, paramsObject)
-			.then(response => response.text())
+			.then(response => {
+				if (response.ok)
+					response.text()
+				else
+					return null
+			})
 			.then(stateFunction)
 			.catch(err => console.log(err))
 	}
