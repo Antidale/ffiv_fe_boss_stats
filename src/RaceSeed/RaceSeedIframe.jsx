@@ -14,10 +14,15 @@ const RaceSeedIframe = (props) => {
         )
     }, []);
 
-    if (!seedInfo) {
+    if (seedInfo === null) {
         useTitle("404");
         return (
             <article>Seed not found.</article>
+        )
+    } else if (seedInfo === undefined || seedInfo === '') {
+        useTitle("loading")
+        return (
+            <article>Loading...</article>
         )
     }
 
