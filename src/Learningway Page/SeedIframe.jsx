@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTitle } from '../Effects/SetTitle';
 import Seeds from './LearningwaySeedSource';
 import { useParams } from 'react-router-dom';

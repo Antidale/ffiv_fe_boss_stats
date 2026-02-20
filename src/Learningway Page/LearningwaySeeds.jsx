@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTitle } from '../Effects/SetTitle';
 import VodLinks from './VodLinks';
 import LearningwayVods from './LearningwayVods'

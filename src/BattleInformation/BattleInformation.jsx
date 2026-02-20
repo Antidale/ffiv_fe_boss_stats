@@ -1,4 +1,3 @@
-import React from 'react';
 import EnemyDetail from '../EnemyDetail/EnemyDetail';
 
 const BattleInformation = ({ battleInfo }) => (

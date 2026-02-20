@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import Dropdown from '../Dropdown/Dropdown';
 import BattleInformation from '../BattleInformation/BattleInformation';
 import Api from '../Api/Api'

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import Api from '../Api/Api';
 import EquipmentItem from "../EquipmentItem/EquipmentItem"
 
