@@ -1,4 +1,3 @@
-import React from 'react';
 import StatItem from '../StatItem/StatItem';
 import ItemTitle from '../StatItem/ItemTitle';
 import EquipBy from '../EquipBy/EquipBy';

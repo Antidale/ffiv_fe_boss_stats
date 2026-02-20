@@ -1,10 +1,5 @@
-import React from 'react';
 import { useTitle } from '../Effects/SetTitle';
 import { NavLink } from 'react-router-dom';
-
-import VodLinks from './VodLinks';
-import LearninwayVods from './LearningwayVods'
-import InstructionalVideos from './InstructionalVideos';
 
 const Learningway = () => {
     useTitle("Learningway")

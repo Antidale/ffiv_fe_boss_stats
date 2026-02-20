@@ -1,4 +1,3 @@
-import React from 'react';
 import SummaryData from './SummaryData';
 import Utils from '../Utils/Utils';
 

@@ -1,5 +1,4 @@
 import YouTubeIframe from '../Utils/YouTube';
-import React from 'react';
 import { useTitle } from '../Effects/SetTitle';
 
 

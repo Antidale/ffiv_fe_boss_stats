@@ -1,4 +1,3 @@
-import React from 'react';
 import StatItem from '../StatItem/StatItem';
 import Note from '../StatItem/Note';
 import Utils from '../Utils/Utils';
