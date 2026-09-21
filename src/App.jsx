@@ -1,7 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Header/Header';
-import RaceSeedIframe from './RaceSeed/RaceSeedIframe';
 
 const Home = lazy(() => import('./Home/Home'));
 const BossPage = lazy(() => import('./BossPage/BossPage'));
@@ -13,7 +12,7 @@ const InstructionalVideos = lazy(() => import('./Learningway Page/InstructionalV
 const LearningwaySeeds = lazy(() => import('./Learningway Page/LearningwaySeeds'))
 const Showcase = lazy(() => import('./ShowcasePage/ShowcasePage'))
 const SotwIframe = lazy(() => import('./SOTW/SotwIframe'))
-const RaceSeedIfram = lazy(() => import('./RaceSeed/RaceSeedIframe'))
+const RaceSeedIframe = lazy(() => import('./RaceSeed/RaceSeedIframe'))
 
 const App = () => (
   <BrowserRouter>
